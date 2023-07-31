@@ -1,4 +1,3 @@
-<div dir="rtl" align="right">
 # اصول کد نویسی تمیز در .NET/.NET Core
 
 If you liked `clean-code-dotnet` project or if it helped you, please give a star :star: for this repository. That will not only help strengthen our .NET community but also improve skills about the clean code for .NET developers in around the world. Thank you very much :+1:
@@ -273,7 +272,6 @@ public static void main(String[] args)
 **[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
-</div>
 
 
 ## Variables
