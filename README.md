@@ -62,35 +62,33 @@ int daySinceModification;
 **[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
-</div>
 
 <details>
-  <summary><b>Avoid Misleading Names</b></summary>
+  <summary><b>از نوشتن نام های گمراه کننده خودداری کنید</b></summary>
 
-Name the variable to reflect what it is used for.
+نام متغیر باید نشان دهد برای چه چیزی استفاده میشود.
 
-**Bad:**
+**بد:**
 
 ```csharp
 var dataFromDb = db.GetFromService().ToList();
 ```
 
-**Good:**
+**خوب:**
 
 ```csharp
 var listOfEmployee = _employeeService.GetEmployees().ToList();
 ```
-
-**[⬆ Back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
 <details>
-  <summary><b>Avoid Hungarian notation</b></summary>
+  <summary><b>از نشان گذاری مجارستانی خود داری کنید</b></summary>
 
-Hungarian Notation restates the type which is already present in the declaration. This is pointless since modern IDEs will identify the type.
+نشان گذاری مجارستانی نوع متغییر را در نام آن اعلام میکند. این کار بیهوده است چون محیط های توسعه مدرن (IDEs) نوع را شناسایی و نمایش میدهند.
 
-**Bad:**
+**بد:**
 
 ```csharp
 int iCounter;
@@ -98,7 +96,7 @@ string strFullName;
 DateTime dModifiedDate;
 ```
 
-**Good:**
+**خوب:**
 
 ```csharp
 int counter;
@@ -106,9 +104,9 @@ string fullName;
 DateTime modifiedDate;
 ```
 
-Hungarian Notation should also not be used in paramaters.
+همچنین نماد مجارستانی نباید در پارامترهای ورودی متد استفاده شود.
 
-**Bad:**
+**بد:**
 
 ```csharp
 public bool IsShopOpen(string pDay, int pAmount)
@@ -117,7 +115,7 @@ public bool IsShopOpen(string pDay, int pAmount)
 }
 ```
 
-**Good:**
+**خوب:**
 
 ```csharp
 public bool IsShopOpen(string day, int amount)
@@ -126,18 +124,16 @@ public bool IsShopOpen(string day, int amount)
 }
 ```
 
-**[⬆ Back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
 <details>
-  <summary><b>Use consistent capitalization</b></summary>
+  <summary><b>از حروف بزرگ استفاده کنید</b></summary>
 
-Capitalization tells you a lot about your variables,
-functions, etc. These rules are subjective, so your team can choose whatever
-they want. The point is, no matter what you all choose, just be consistent.
+حروف بزرگ اطلاعات زیادی در رابطه با متغیر، توابع و ... به شما میدهند. این قوانین ذهنی هستند و تیم شما میتواند هر کدام را انتخاب کند. نکته مهم این است مهم نیست که کدام را انتخاب میکنید فقط در انتخاب خود ثابت قدم باشید.
 
-**Bad:**
+**بد:**
 
 ```csharp
 const int DAYS_IN_WEEK = 7;
@@ -153,7 +149,7 @@ class animal {}
 class Alpaca {}
 ```
 
-**Good:**
+**خوب:**
 
 ```csharp
 const int DaysInWeek = 7;
@@ -169,16 +165,16 @@ class Animal {}
 class Alpaca {}
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
 <details>
-  <summary><b>Use pronounceable names</b></summary>
+  <summary><b>از نام های قابل تلفظ استفاده کنید</b></summary>
 
-It will take time to investigate the meaning of the variables and functions when they are not pronounceable.
+تحقیق در رابطه با متغیر ها و توابعی که نام آنها قابل تلفظ نیست میتواند زمان بر باشد.
 
-**Bad:**
+**بد:**
 
 ```csharp
 public class Employee
@@ -188,7 +184,7 @@ public class Employee
 }
 ```
 
-**Good:**
+**خوب:**
 
 ```csharp
 public class Employee
@@ -198,16 +194,16 @@ public class Employee
 }
 ```
 
-**[⬆ Back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
 <details>
-  <summary><b>Use Camelcase notation</b></summary>
+  <summary><b>از نشانه گذاری Camelcase استفاده کنید</b></summary>
 
-Use [Camelcase Notation](https://en.wikipedia.org/wiki/Camel_case) for variable and method paramaters.
+از نشانه گذاری [Camelcase Notation](https://en.wikipedia.org/wiki/Camel_case) برای متغیر و توابع استفاده کنید.
 
-**Bad:**
+**بد:**
 
 ```csharp
 var employeephone;
@@ -218,7 +214,7 @@ public double CalculateSalary(int workingdays, int workinghours)
 }
 ```
 
-**Good:**
+**خوب:**
 
 ```csharp
 var employeePhone;
@@ -229,16 +225,16 @@ public double CalculateSalary(int workingDays, int workingHours)
 }
 ```
 
-**[⬆ Back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
 <details>
-  <summary><b>Use domain name</b></summary>
+  <summary><b>از نام دامنه استفاده کنید</b></summary>
 
-People who read your code are also programmers. Naming things right will help everyone be on the same page. We don't want to take time to explain to everyone what a variable or function is for.
+کسانی که کد شما را میخوانند مانند شما برنامه نویس هستند. نام گذاری درست به همه کمک میکند که در یک یک موضوع فکر کنند. ما نمیخواهیم زمان برای توضیح دادن در رابطه با متغیر و توابع خود بگذاریم.
 
-**Good**
+**خوب**
 
 ```csharp
 public class SingleObject
@@ -274,9 +270,11 @@ public static void main(String[] args)
 }
 ```
 
-**[⬆ Back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
+</div>
+
 
 ## Variables
 
