@@ -11,7 +11,7 @@ If you liked `clean-code-dotnet` project or if it helped you, please give a star
   - [متغیرها](#متغیرها)
   - [توابع](#توابع)
   - [Objects and Data Structures](#objects-and-data-structures)
-  - [Classes](#classes)
+  - [کلاس ها](#کلاس ها)
   - [SOLID](#solid)
   - [Testing](#testing)
   - [Concurrency](#concurrency)
@@ -1659,7 +1659,7 @@ Console.WriteLine(employee.Name); // Employee name: John Doe
 
 </details>
 
-## Classes
+## کلاس ها
 
 <details>
   <summary><b>Use method chaining</b></summary>
