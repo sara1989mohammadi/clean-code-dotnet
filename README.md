@@ -15,7 +15,7 @@ If you liked `clean-code-dotnet` project or if it helped you, please give a star
   - [سالید](#سالید)
   - [Testing](#testing)
   - [Concurrency](#concurrency)
-  - [Error Handling](#error-handling)
+  - [مدیریت خطا](#مدیریت-خطا)
   - [Formatting](#formatting)
   - [Comments](#comments)
 - [Other Clean Code Resources](#other-clean-code-resources)
@@ -2614,7 +2614,7 @@ There are many new await-friendly techniques that should be used instead of the 
 
 </details>
 
-## Error Handling
+## مدیریت خطا
 
 <details>
   <summary><b>Basic concept of error handling</b></summary>
