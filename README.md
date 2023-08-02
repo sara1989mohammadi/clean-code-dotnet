@@ -14,7 +14,7 @@ If you liked `clean-code-dotnet` project or if it helped you, please give a star
   - [کلاس ها](#کلاس-ها)
   - [سالید](#سالید)
   - [تستهای واحد](#تستهای-واحد)
-  - [Concurrency](#concurrency)
+  - [همروندی](#همروندی)
   - [مدیریت خطا](#مدیریت-خطا)
   - [Formatting](#formatting)
   - [کامنت ها](#کامنت-ها)
@@ -2549,7 +2549,7 @@ public class MakeDotNetGreatAgainTests
 
 </details>
 
-## Concurrency
+## همروندی
 
 <details>
   <summary><b>Use Async/Await</b></summary>
