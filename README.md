@@ -274,7 +274,7 @@ public static void main(String[] args)
 </details>
 
 
-## Variables
+## متغیرها
 
 <details>
   <summary><b>Avoid nesting too deeply and return early</b></summary>
