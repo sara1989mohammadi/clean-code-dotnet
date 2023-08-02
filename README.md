@@ -8,7 +8,7 @@ If you liked `clean-code-dotnet` project or if it helped you, please give a star
 - [مقدمه](#مقدمه)
 - [کد تمیز دات نت](#کد-تمیز-دات-نت)
   - [نام گذاری](#نام-گذاری)
-  - [Variables](#variables)
+  - [متغیرها](#متغیرها)
   - [Functions](#functions)
   - [Objects and Data Structures](#objects-and-data-structures)
   - [Classes](#classes)
