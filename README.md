@@ -1540,7 +1540,7 @@ InventoryTracker("apples", request, "www.inventory-awesome.io");
 
 </details>
 
-## اشیا و ساختارداده ها
+## اشیاوساختاردادهها
 
 <details>
   <summary><b>Use getters and setters</b></summary>
