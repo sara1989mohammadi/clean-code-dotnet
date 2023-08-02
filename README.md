@@ -9,7 +9,7 @@ If you liked `clean-code-dotnet` project or if it helped you, please give a star
 - [کد تمیز دات نت](#کد-تمیز-دات-نت)
   - [نام گذاری](#نام-گذاری)
   - [متغیرها](#متغیرها)
-  - [Functions](#functions)
+  - [توابع](#توابع)
   - [Objects and Data Structures](#objects-and-data-structures)
   - [Classes](#classes)
   - [SOLID](#solid)
@@ -690,7 +690,7 @@ public void CreateMicrobrewery(string breweryName = "Hipster Brew Co.")
 
 </details>
 
-## Functions
+## توابع
 
 <details>
   <summary><b>Avoid side effects</b></summary>
