@@ -17,7 +17,7 @@ If you liked `clean-code-dotnet` project or if it helped you, please give a star
   - [Concurrency](#concurrency)
   - [مدیریت خطا](#مدیریت-خطا)
   - [Formatting](#formatting)
-  - [Comments](#comments)
+  - [کامنت ها](#کامنت-ها)
 - [Other Clean Code Resources](#other-clean-code-resources)
   - [Other Clean Code Lists](#other-clean-code-lists)
   - [Style Guides](#style-guides)
@@ -2970,7 +2970,7 @@ indent_size = 2
 
 </details>
 
-## Comments
+## کامنت ها
 
 <details>
   <summary><b>Avoid positional markers</b></summary>
