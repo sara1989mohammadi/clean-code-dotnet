@@ -383,7 +383,7 @@ public long Fibonacci(int n)
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
@@ -428,7 +428,7 @@ foreach (var location in locations)
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
@@ -458,7 +458,7 @@ if (userRole == ADMIN_ROLE)
 
 Using this we only have to change in centralize place and others will adapt it.
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
@@ -493,7 +493,7 @@ public class Car
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
@@ -512,7 +512,7 @@ var ymdstr = DateTime.UtcNow.ToString("MMMM dd, yyyy");
 var currentDate = DateTime.UtcNow.ToString("MMMM dd, yyyy");
 ```
 
-**[⬆ Back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
@@ -534,7 +534,7 @@ GetUserProfile();
 GetUser();
 ```
 
-**[⬆ Back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
@@ -578,7 +578,7 @@ Console.Write("JSON form of Data object: ");
 Console.WriteLine(sr2.ReadToEnd());
 ```
 
-**[⬆ Back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
@@ -621,7 +621,7 @@ if (person.PersonAccess == PersonAccess.ACCESS_UPDATE)
 }
 ```
 
-**[⬆ Back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
@@ -656,7 +656,7 @@ if(cityGroup.Success == true && zipCodeGroup.Success == true)
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
@@ -686,7 +686,7 @@ public void CreateMicrobrewery(string breweryName = "Hipster Brew Co.")
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
@@ -736,7 +736,7 @@ Console.WriteLine(name); // Ryan McDermott
 Console.WriteLine(fullName); // His first name is Ryan, and his last name is McDermott
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
@@ -771,7 +771,7 @@ if (IsDOMNodePresent(node))
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
@@ -844,7 +844,7 @@ class Cessna : IAirplane
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
@@ -893,7 +893,7 @@ public Path TravelToTexas(object vehicle)
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
@@ -924,7 +924,7 @@ public int Combine(int val1, int val2)
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
@@ -963,7 +963,7 @@ public void CreateTempFile(string name)
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
@@ -1013,7 +1013,7 @@ var configuration = new Configuration(new Dictionary<string, string>() {
 
 And now you must use instance of `Configuration` in your application.
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
@@ -1080,7 +1080,7 @@ var connection = new DBConnection(options);
 
 And now you must use instance of `DBConnection` in your application.
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
@@ -1125,7 +1125,7 @@ public void CreateMenu(MenuConfig config)
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
@@ -1166,7 +1166,7 @@ public List<Client> GetActiveClients(string[] clients)
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
@@ -1209,7 +1209,7 @@ var message = new Email(...);
 message.Send();
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
@@ -1363,7 +1363,7 @@ class BetterJSAlternative
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
@@ -1473,7 +1473,7 @@ var review = new PerformanceReview(employee);
 review.PerfReview();
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
@@ -1498,7 +1498,7 @@ if (article.IsPublished())
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
@@ -1536,7 +1536,7 @@ var request = RequestModule(requestUrl);
 InventoryTracker("apples", request, "www.inventory-awesome.io");
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
@@ -1614,7 +1614,7 @@ bankAccount.WithdrawBalance(price);
 balance = bankAccount.Balance;
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
@@ -1655,7 +1655,7 @@ var employee = new Employee("John Doe");
 Console.WriteLine(employee.Name); // Employee name: John Doe
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
@@ -1721,7 +1721,7 @@ internal static void ListFluentExtensions()
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
@@ -1812,7 +1812,7 @@ class Employee
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
@@ -1904,7 +1904,7 @@ class UserSettings
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
@@ -2017,7 +2017,7 @@ class HttpRequester
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
@@ -2159,7 +2159,7 @@ var shapes = new[] { new Rectangle(), new Rectangle(), new Square() };
 RenderLargeRectangles(shapes);
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
@@ -2249,7 +2249,7 @@ public class Robot : IWorkable
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
@@ -2353,7 +2353,7 @@ public class Manager
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
@@ -2449,7 +2449,7 @@ public List<EmployeeData> ShowList(Employee employees)
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
@@ -2545,7 +2545,7 @@ public class MakeDotNetGreatAgainTests
 
 > Soure https://www.codingblocks.net/podcast/how-to-write-amazing-unit-tests
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
@@ -2610,7 +2610,7 @@ There are many new await-friendly techniques that should be used instead of the 
 
 > Source https://gist.github.com/jonlabelle/841146854b23b305b50fa5542f84b20c
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
@@ -2658,7 +2658,7 @@ catch (Exception ex)
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
@@ -2696,7 +2696,7 @@ catch (Exception error)
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
@@ -2744,7 +2744,7 @@ catch (TaskSchedulerException ex)
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
@@ -2796,7 +2796,7 @@ catch (Exception error)
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
@@ -2966,7 +2966,7 @@ indent_size = 2
 
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
@@ -3035,7 +3035,7 @@ void Actions()
 };
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
@@ -3059,7 +3059,7 @@ doStuff();
 doStuff();
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
@@ -3092,7 +3092,7 @@ public int Combine(int a,int b)
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
@@ -3172,7 +3172,7 @@ private int ConvertTo32BitInt(int value)
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
