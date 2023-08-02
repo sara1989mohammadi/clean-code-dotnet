@@ -10,7 +10,7 @@ If you liked `clean-code-dotnet` project or if it helped you, please give a star
   - [نام گذاری](#نام-گذاری)
   - [متغیرها](#متغیرها)
   - [توابع](#توابع)
-  - [Objects and Data Structures](#objects-and-data-structures)
+  - [ اشیا و ساختار داده ها](#اشیاوساختاردادهها)
   - [کلاسها](#کلاسها)
   - [سالید](#سالید)
   - [Testing](#testing)
@@ -1540,7 +1540,7 @@ InventoryTracker("apples", request, "www.inventory-awesome.io");
 
 </details>
 
-## Objects and Data Structures
+## اشیا و ساختارداده ها
 
 <details>
   <summary><b>Use getters and setters</b></summary>
