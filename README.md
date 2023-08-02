@@ -12,7 +12,7 @@ If you liked `clean-code-dotnet` project or if it helped you, please give a star
   - [توابع](#توابع)
   - [Objects and Data Structures](#objects-and-data-structures)
   - [کلاسها](#کلاس-ها)
-  - [سالید](#سالبد)
+  - [سالید](#سالید)
   - [Testing](#testing)
   - [Concurrency](#concurrency)
   - [Error Handling](#error-handling)
