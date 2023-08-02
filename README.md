@@ -281,7 +281,7 @@ public static void main(String[] args)
 
 Too many if else statements can make the code hard to follow. **Explicit is better than implicit**.
 
-**Bad:**
+ **بد:**
 
 ```csharp
 public bool IsShopOpen(string day)
@@ -314,7 +314,7 @@ public bool IsShopOpen(string day)
 }
 ```
 
-**Good:**
+**خوب:**
 
 ```csharp
 public bool IsShopOpen(string day)
@@ -329,7 +329,7 @@ public bool IsShopOpen(string day)
 }
 ```
 
-**Bad:**
+ **بد:**
 
 ```csharp
 public long Fibonacci(int n)
@@ -359,7 +359,7 @@ public long Fibonacci(int n)
 }
 ```
 
-**Good:**
+**خوب:**
 
 ```csharp
 public long Fibonacci(int n)
@@ -392,7 +392,7 @@ public long Fibonacci(int n)
 
 Don’t force the reader of your code to translate what the variable means. **Explicit is better than implicit**.
 
-**Bad:**
+ **بد:**
 
 ```csharp
 var l = new[] { "Austin", "New York", "San Francisco" };
@@ -411,7 +411,7 @@ for (var i = 0; i < l.Count(); i++)
 }
 ```
 
-**Good:**
+**خوب:**
 
 ```csharp
 var locations = new[] { "Austin", "New York", "San Francisco" };
@@ -467,7 +467,7 @@ Using this we only have to change in centralize place and others will adapt it.
 
 If your class/object name tells you something, don't repeat that in your variable name.
 
-**Bad:**
+ **بد:**
 
 ```csharp
 public class Car
@@ -480,7 +480,7 @@ public class Car
 }
 ```
 
-**Good:**
+**خوب:**
 
 ```csharp
 public class Car
@@ -500,13 +500,13 @@ public class Car
 <details>
   <summary><b>Use meaningful and pronounceable variable names</b></summary>
 
-**Bad:**
+ **بد:**
 
 ```csharp
 var ymdstr = DateTime.UtcNow.ToString("MMMM dd, yyyy");
 ```
 
-**Good:**
+**خوب:**
 
 ```csharp
 var currentDate = DateTime.UtcNow.ToString("MMMM dd, yyyy");
@@ -519,7 +519,7 @@ var currentDate = DateTime.UtcNow.ToString("MMMM dd, yyyy");
 <details>
   <summary><b>Use the same vocabulary for the same type of variable</b></summary>
 
-**Bad:**
+ **بد:**
 
 ```csharp
 GetUserInfo();
@@ -528,7 +528,7 @@ GetUserRecord();
 GetUserProfile();
 ```
 
-**Good:**
+**خوب:**
 
 ```csharp
 GetUser();
@@ -543,7 +543,7 @@ GetUser();
 
 We will read more code than we will ever write. It's important that the code we do write is readable and searchable. By _not_ naming variables that end up being meaningful for understanding our program, we hurt our readers. Make your names searchable.
 
-**Bad:**
+ **بد:**
 
 ```csharp
 // What the heck is data for?
@@ -559,7 +559,7 @@ Console.Write("JSON form of Data object: ");
 Console.WriteLine(sr1.ReadToEnd());
 ```
 
-**Good:**
+**خوب:**
 
 ```csharp
 var person = new Person
@@ -585,7 +585,7 @@ Console.WriteLine(sr2.ReadToEnd());
 <details>
   <summary><b>Use searchable names (part 2)</b></summary>
 
-**Bad:**
+ **بد:**
 
 ```csharp
 var data = new { Name = "John", Age = 42, PersonAccess = 4};
@@ -597,7 +597,7 @@ if (data.PersonAccess == 4)
 }
 ```
 
-**Good:**
+**خوب:**
 
 ```csharp
 public enum PersonAccess : int
@@ -628,7 +628,7 @@ if (person.PersonAccess == PersonAccess.ACCESS_UPDATE)
 <details>
   <summary><b>Use explanatory variables</b></summary>
 
-**Bad:**
+ **بد:**
 
 ```csharp
 const string Address = "One Infinite Loop, Cupertino 95014";
@@ -640,7 +640,7 @@ if (matches[0].Success == true && matches[1].Success == true)
 }
 ```
 
-**Good:**
+**خوب:**
 
 Decrease dependence on regex by naming subpatterns.
 
@@ -677,7 +677,7 @@ public void CreateMicrobrewery(string name = null)
 }
 ```
 
-**Good:**
+**خوب:**
 
 ```csharp
 public void CreateMicrobrewery(string breweryName = "Hipster Brew Co.")
@@ -702,7 +702,7 @@ Now, you do need to have side effects in a program on occasion. Like the previou
 The main point is to avoid common pitfalls like sharing state between objects without any structure, using mutable data types that can be written to by anything, and not centralizing where your side effects occur. If you can do this, you will be happier
 than the vast majority of other programmers.
 
-**Bad:**
+ **بد:**
 
 ```csharp
 // Global variable referenced by following function.
@@ -720,7 +720,7 @@ SplitAndEnrichFullName();
 Console.WriteLine(name); // His first name is Ryan, and his last name is McDermott
 ```
 
-**Good:**
+**خوب:**
 
 ```csharp
 public string SplitAndEnrichFullName(string name)
@@ -743,7 +743,7 @@ Console.WriteLine(fullName); // His first name is Ryan, and his last name is McD
 <details>
   <summary><b>Avoid negative conditionals</b></summary>
 
-**Bad:**
+ **بد:**
 
 ```csharp
 public bool IsDOMNodeNotPresent(string node)
@@ -757,7 +757,7 @@ if (!IsDOMNodeNotPresent(node))
 }
 ```
 
-**Good:**
+**خوب:**
 
 ```csharp
 public bool IsDOMNodePresent(string node)
@@ -781,7 +781,7 @@ if (IsDOMNodePresent(node))
 This seems like an impossible task. Upon first hearing this, most people say, "how am I supposed to do anything without an `if` statement?" The answer is that you can use polymorphism to achieve the same task in many cases. The second question is usually, "well that's great but why would I want to do that?" The answer is a previous clean code concept we learned: a function should only do
 one thing. When you have classes and functions that have `if` statements, you are telling your user that your function does more than one thing. Remember, just do one thing.
 
-**Bad:**
+ **بد:**
 
 ```csharp
 class Airplane
@@ -803,7 +803,7 @@ class Airplane
 }
 ```
 
-**Good:**
+**خوب:**
 
 ```csharp
 interface IAirplane
@@ -851,7 +851,7 @@ class Cessna : IAirplane
 <details>
   <summary><b>Avoid type-checking (part 1)</b></summary>
 
-**Bad:**
+ **بد:**
 
 ```csharp
 public Path TravelToTexas(object vehicle)
@@ -867,7 +867,7 @@ public Path TravelToTexas(object vehicle)
 }
 ```
 
-**Good:**
+**خوب:**
 
 ```csharp
 public Path TravelToTexas(Traveler vehicle)
@@ -900,7 +900,7 @@ public Path TravelToTexas(object vehicle)
 <details>
   <summary><b>Avoid type-checking (part 2)</b></summary>
 
-**Bad:**
+ **بد:**
 
 ```csharp
 public int Combine(dynamic val1, dynamic val2)
@@ -915,7 +915,7 @@ public int Combine(dynamic val1, dynamic val2)
 }
 ```
 
-**Good:**
+**خوب:**
 
 ```csharp
 public int Combine(int val1, int val2)
@@ -933,7 +933,7 @@ public int Combine(int val1, int val2)
 
 A flag indicates that the method has more than one responsibility. It is best if the method only has a single responsibility. Split the method into two if a boolean parameter adds multiple responsibilities to the method.
 
-**Bad:**
+ **بد:**
 
 ```csharp
 public void CreateFile(string name, bool temp = false)
@@ -949,7 +949,7 @@ public void CreateFile(string name, bool temp = false)
 }
 ```
 
-**Good:**
+**خوب:**
 
 ```csharp
 public void CreateFile(string name)
@@ -973,7 +973,7 @@ public void CreateTempFile(string name)
 Polluting globals is a bad practice in many languages because you could clash with another library and the user of your API would be none-the-wiser until they get an exception in production. Let's think about an example: what if you wanted to have configuration array.
 You could write global function like `Config()`, but it could clash with another library that tried to do the same thing.
 
-**Bad:**
+ **بد:**
 
 ```csharp
 public Dictionary<string, string> Config()
@@ -984,7 +984,7 @@ public Dictionary<string, string> Config()
 }
 ```
 
-**Good:**
+**خوب:**
 
 ```csharp
 class Configuration
@@ -1029,7 +1029,7 @@ Singleton is an [anti-pattern](https://en.wikipedia.org/wiki/Singleton_pattern).
 
 There is also very good thoughts by [Misko Hevery](http://misko.hevery.com/about/) about the [root of problem](http://misko.hevery.com/2008/08/25/root-cause-of-singletons/).
 
-**Bad:**
+ **بد:**
 
 ```csharp
 class DBConnection
@@ -1057,7 +1057,7 @@ class DBConnection
 var singleton = DBConnection.GetInstance();
 ```
 
-**Good:**
+**خوب:**
 
 ```csharp
 class DBConnection
@@ -1091,7 +1091,7 @@ Limiting the amount of function parameters is incredibly important because it ma
 
 Zero arguments is the ideal case. One or two arguments is ok, and three should be avoided. Anything more than that should be consolidated. Usually, if you have more than two arguments then your function is trying to do too much. In cases where it's not, most of the time a higher-level object will suffice as an argument.
 
-**Bad:**
+ **بد:**
 
 ```csharp
 public void CreateMenu(string title, string body, string buttonText, bool cancellable)
@@ -1100,7 +1100,7 @@ public void CreateMenu(string title, string body, string buttonText, bool cancel
 }
 ```
 
-**Good:**
+**خوب:**
 
 ```csharp
 public class MenuConfig
@@ -1135,7 +1135,7 @@ public void CreateMenu(MenuConfig config)
 This is by far the most important rule in software engineering. When functions do more than one thing, they are harder to compose, test, and reason about. When you can isolate a function to just one action, they can be refactored easily and your code will read much
 cleaner. If you take nothing else away from this guide other than this, you'll be ahead of many developers.
 
-**Bad:**
+ **بد:**
 
 ```csharp
 public void SendEmailToListOfClients(string[] clients)
@@ -1151,7 +1151,7 @@ public void SendEmailToListOfClients(string[] clients)
 }
 ```
 
-**Good:**
+**خوب:**
 
 ```csharp
 public void SendEmailToListOfClients(string[] clients)
@@ -1173,7 +1173,7 @@ public List<Client> GetActiveClients(string[] clients)
 <details>
   <summary><b>Function names should say what they do</b></summary>
 
-**Bad:**
+ **بد:**
 
 ```csharp
 public class Email
@@ -1191,7 +1191,7 @@ var message = new Email(...);
 message.Handle();
 ```
 
-**Good:**
+**خوب:**
 
 ```csharp
 public class Email
@@ -1220,7 +1220,7 @@ message.Send();
 
 When you have more than one level of abstraction your function is usually doing too much. Splitting up functions leads to reusability and easier testing.
 
-**Bad:**
+ **بد:**
 
 ```csharp
 public string ParseBetterJSAlternative(string code)
@@ -1299,7 +1299,7 @@ public string ParseBetterJSAlternative(string code)
 }
 ```
 
-**Good:**
+**خوب:**
 
 The best solution is move out the dependencies of `ParseBetterJSAlternative()` function.
 
@@ -1372,7 +1372,7 @@ class BetterJSAlternative
 
 If a function calls another, keep those functions vertically close in the source file. Ideally, keep the caller right above the callee. We tend to read code from top-to-bottom, like a newspaper. Because of this, make your code read that way.
 
-**Bad:**
+ **بد:**
 
 ```csharp
 class PerformanceReview
@@ -1422,7 +1422,7 @@ var  review = new PerformanceReview(employee);
 review.PerfReview();
 ```
 
-**Good:**
+**خوب:**
 
 ```csharp
 class PerformanceReview
@@ -1480,7 +1480,7 @@ review.PerfReview();
 <details>
   <summary><b>Encapsulate conditionals</b></summary>
 
-**Bad:**
+ **بد:**
 
 ```csharp
 if (article.state == "published")
@@ -1489,7 +1489,7 @@ if (article.state == "published")
 }
 ```
 
-**Good:**
+**خوب:**
 
 ```csharp
 if (article.IsPublished())
@@ -1507,7 +1507,7 @@ if (article.IsPublished())
 
 Dead code is just as bad as duplicate code. There's no reason to keep it in your codebase. If it's not being called, get rid of it! It will still be safe in your version history if you still need it.
 
-**Bad:**
+ **بد:**
 
 ```csharp
 public void OldRequestModule(string url)
@@ -1524,7 +1524,7 @@ var request = NewRequestModule(requestUrl);
 InventoryTracker("apples", request, "www.inventory-awesome.io");
 ```
 
-**Good:**
+**خوب:**
 
 ```csharp
 public void RequestModule(string url)
@@ -1557,7 +1557,7 @@ Using it, you can control properties modification on an object.
 
 Additionally, this is part of Open/Closed principle, from object-oriented design principles.
 
-**Bad:**
+ **بد:**
 
 ```csharp
 class BankAccount
@@ -1571,7 +1571,7 @@ var bankAccount = new BankAccount();
 bankAccount.Balance -= 100;
 ```
 
-**Good:**
+**خوب:**
 
 ```csharp
 class BankAccount
@@ -1621,7 +1621,7 @@ balance = bankAccount.Balance;
 <details>
   <summary><b>Make objects have private/protected members</b></summary>
 
-**Bad:**
+ **بد:**
 
 ```csharp
 class Employee
@@ -1638,7 +1638,7 @@ var employee = new Employee("John Doe");
 Console.WriteLine(employee.Name); // Employee name: John Doe
 ```
 
-**Good:**
+**خوب:**
 
 ```csharp
 class Employee
@@ -1667,7 +1667,7 @@ Console.WriteLine(employee.Name); // Employee name: John Doe
 This pattern is very useful and commonly used in many libraries. It allows your code to be expressive, and less verbose.
 For that reason, use method chaining and take a look at how clean your code will be.
 
-**Good:**
+**خوب:**
 
 ```csharp
 public static class ListExtensions
@@ -1740,7 +1740,7 @@ depends on your problem at hand, but this is a decent list of when inheritance m
 2. You can reuse code from the base classes (Humans can move like all animals).
 3. You want to make global changes to derived classes by changing a base class (Change the caloric expenditure of all animals when they move).
 
-**Bad:**
+ **بد:**
 
 ```csharp
 class Employee
@@ -1774,7 +1774,7 @@ class EmployeeTaxData : Employee
 }
 ```
 
-**Good:**
+**خوب:**
 
 ```csharp
 class EmployeeTaxData
@@ -1838,7 +1838,7 @@ As stated in Clean Code, "There should never be more than one reason for a class
 
 It's important because if too much functionality is in one class and you modify a piece of it, it can be difficult to understand how that will affect other dependent modules in your codebase.
 
-**Bad:**
+ **بد:**
 
 ```csharp
 class UserSettings
@@ -1865,7 +1865,7 @@ class UserSettings
 }
 ```
 
-**Good:**
+**خوب:**
 
 ```csharp
 class UserAuth
@@ -1913,7 +1913,7 @@ class UserSettings
 
 As stated by Bertrand Meyer, "software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification." What does that mean though? This principle basically states that you should allow users to add new functionalities without changing existing code.
 
-**Bad:**
+ **بد:**
 
 ```csharp
 abstract class AdapterBase
@@ -1977,7 +1977,7 @@ class HttpRequester : AdapterBase
 }
 ```
 
-**Good:**
+**خوب:**
 
 ```csharp
 interface IAdapter
@@ -2030,7 +2030,7 @@ etc.)." That's an even scarier definition.
 The best explanation for this is if you have a parent class and a child class, then the base class and child class can be used interchangeably without getting incorrect results. This might still be confusing, so let's take a look at the classic Square-Rectangle example. Mathematically, a square is a rectangle, but if you model it using the "is-a" relationship via inheritance, you quickly
 get into trouble.
 
-**Bad:**
+ **بد:**
 
 ```csharp
 class Rectangle
@@ -2087,7 +2087,7 @@ var rectangles = new[] { new Rectangle(), new Rectangle(), new Square() };
 RenderLargeRectangles(rectangles);
 ```
 
-**Good:**
+**خوب:**
 
 ```csharp
 abstract class ShapeBase
@@ -2171,7 +2171,7 @@ ISP states that "Clients should not be forced to depend upon interfaces that the
 A good example to look at that demonstrates this principle is for
 classes that require large settings objects. Not requiring clients to setup huge amounts of options is beneficial, because most of the time they won't need all of the settings. Making them optional helps prevent having a "fat interface".
 
-**Bad:**
+ **بد:**
 
 ```csharp
 public interface IEmployee
@@ -2207,7 +2207,7 @@ public class Robot : IEmployee
 }
 ```
 
-**Good:**
+**خوب:**
 
 Not every worker is an employee, but every employee is an worker.
 
@@ -2264,7 +2264,7 @@ This principle states two essential things:
 This can be hard to understand at first, but if you've worked with .NET/.NET Core framework, you've seen an implementation of this principle in the form of [Dependency Injection](https://martinfowler.com/articles/injection.html) (DI). While they are not identical concepts, DIP keeps high-level modules from knowing the details of its low-level modules and setting them up.
 It can accomplish this through DI. A huge benefit of this is that it reduces the coupling between modules. Coupling is a very bad development pattern because it makes your code hard to refactor.
 
-**Bad:**
+ **بد:**
 
 ```csharp
 public abstract class EmployeeBase
@@ -2310,7 +2310,7 @@ public class Manager
 }
 ```
 
-**Good:**
+**خوب:**
 
 ```csharp
 public interface IEmployee
@@ -2370,7 +2370,7 @@ Oftentimes you have duplicate code because you have two or more slightly differe
 
 Getting the abstraction right is critical, that's why you should follow the SOLID principles laid out in the [Classes](#classes) section. Bad abstractions can be worse than duplicate code, so be careful! Having said this, if you can make a good abstraction, do it! Don't repeat yourself, otherwise you'll find yourself updating multiple places anytime you want to change one thing.
 
-**Bad:**
+ **بد:**
 
 ```csharp
 public List<EmployeeData> ShowDeveloperList(Developers developers)
@@ -2409,7 +2409,7 @@ public List<ManagerData> ShowManagerList(Manager managers)
 }
 ```
 
-**Good:**
+**خوب:**
 
 ```csharp
 public List<EmployeeData> ShowList(Employee employees)
@@ -2470,7 +2470,7 @@ There's no excuse to not write tests. There's [plenty of good .NET test framewor
 
 Ensures that your tests are laser focused and not testing miscellaenous (non-related) things, forces [AAA patern](http://wiki.c2.com/?ArrangeActAssert) used to make your codes more clean and readable.
 
-**Bad:**
+ **بد:**
 
 ```csharp
 
@@ -2495,7 +2495,7 @@ public class MakeDotNetGreatAgainTests
 
 ```
 
-**Good:**
+**خوب:**
 
 ```csharp
 
@@ -2630,7 +2630,7 @@ If you need to re-throw an exception after catching it, use just 'throw'
 By using this, you will save the stack trace. But in the bad option below,
 you will lost the stack trace.
 
-**Bad:**
+ **بد:**
 
 ```csharp
 try
@@ -2644,7 +2644,7 @@ catch (Exception ex)
 }
 ```
 
-**Good:**
+**خوب:**
 
 ```csharp
 try
@@ -2667,7 +2667,7 @@ catch (Exception ex)
 
 Doing nothing with a caught error doesn't give you the ability to ever fix or react to said error. Throwing the error isn't much better as often times it can get lost in a sea of things printed to the console. If you wrap any bit of code in a `try/catch` it means you think an error may occur there and therefore you should have a plan, or create a code path, for when it occurs.
 
-**Bad:**
+ **بد:**
 
 ```csharp
 try
@@ -2680,7 +2680,7 @@ catch (Exception ex)
 }
 ```
 
-**Good:**
+**خوب:**
 
 ```csharp
 try
@@ -2706,7 +2706,7 @@ catch (Exception error)
 If you need to take action according to type of the exception,
 you better use multiple catch block for exception handling.
 
-**Bad:**
+ **بد:**
 
 ```csharp
 try
@@ -2727,7 +2727,7 @@ catch (Exception ex)
 }
 ```
 
-**Good:**
+**خوب:**
 
 ```csharp
 try
@@ -2754,7 +2754,7 @@ catch (TaskSchedulerException ex)
 C# allows the exception to be rethrown in a catch block using the `throw` keyword. It is a bad practice to throw a caught exception using `throw e;`. This statement resets the stack trace. Instead use `throw;`. This will keep the stack trace and provide a deeper insight about the exception.
 Another option is to use a custom exception. Simply instantiate a new exception and set its inner exception property to the caught exception with throw `new CustomException("some info", e);`. Adding information to an exception is a good practice as it will help with debugging. However, if the objective is to log an exception then use `throw;` to pass the buck to the caller.
 
-**Bad:**
+ **بد:**
 
 ```csharp
 try
@@ -2768,7 +2768,7 @@ catch (Exception ex)
 }
 ```
 
-**Good:**
+**خوب:**
 
 ```csharp
 try
@@ -2782,7 +2782,7 @@ catch (Exception error)
 }
 ```
 
-**Good:**
+**خوب:**
 
 ```csharp
 try
@@ -2805,11 +2805,11 @@ catch (Exception error)
 <details>
   <summary><b>Uses <i>.editorconfig</i> file</b></summary>
 
-**Bad:**
+ **بد:**
 
 Has many code formatting styles in the project. For example, indent style is `space` and `tab` mixed in the project.
 
-**Good:**
+**خوب:**
 
 Define and maintain consistent code style in your codebase with the use of an `.editorconfig` file
 
@@ -2977,7 +2977,7 @@ indent_size = 2
 
 They usually just add noise. Let the functions and variable names along with the proper indentation and formatting give the visual structure to your code.
 
-**Bad:**
+ **بد:**
 
 ```csharp
 ////////////////////////////////////////////////////////////////////////////////
@@ -2998,7 +2998,7 @@ void Actions()
 };
 ```
 
-**Bad:**
+ **بد:**
 
 ```csharp
 
@@ -3020,7 +3020,7 @@ void Actions() {
 #endregion
 ```
 
-**Good:**
+**خوب:**
 
 ```csharp
 var model = new[]
@@ -3044,7 +3044,7 @@ void Actions()
 
 Version control exists for a reason. Leave old code in your history.
 
-**Bad:**
+ **بد:**
 
 ```csharp
 doStuff();
@@ -3053,7 +3053,7 @@ doStuff();
 // doSoMuchStuff();
 ```
 
-**Good:**
+**خوب:**
 
 ```csharp
 doStuff();
@@ -3068,7 +3068,7 @@ doStuff();
 
 Remember, use version control! There's no need for dead code, commented code, and especially journal comments. Use `git log` to get history!
 
-**Bad:**
+ **بد:**
 
 ```csharp
 /**
@@ -3083,7 +3083,7 @@ public int Combine(int a,int b)
 }
 ```
 
-**Good:**
+**خوب:**
 
 ```csharp
 public int Combine(int a,int b)
@@ -3101,7 +3101,7 @@ public int Combine(int a,int b)
 
 Comments are an apology, not a requirement. Good code _mostly_ documents itself.
 
-**Bad:**
+ **بد:**
 
 ```csharp
 public int HashIt(string data)
@@ -3146,7 +3146,7 @@ public int HashIt(string data)
 If a comment explains WHAT the code is doing, it is probably a useless comment and can be implemented with a well named variable or function. The comment in the previous code could be replaced with a function named `ConvertTo32bitInt` so this comment is still useless.
 However it would be hard to express by code WHY the developer chose djb2 hash algorithm instead of sha-1 or another hash function. In that case a comment is acceptable.
 
-**Good:**
+**خوب:**
 
 ```csharp
 public int Hash(string data)
