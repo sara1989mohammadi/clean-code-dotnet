@@ -277,9 +277,9 @@ public static void main(String[] args)
 ## متغیرها
 
 <details>
-  <summary><b>Avoid nesting too deeply and return early</b></summary>
+  <summary><b>از دندانه کردن عمیق و بازگشت سریع خودداری کنید</b></summary>
 
-Too many if else statements can make the code hard to follow. **Explicit is better than implicit**.
+استفاده بیش از حد از if/esle میتواند خوانایی و دنبال کردن کد را سخت کند. **صریح بهتر از ضمنی است**.
 
  **بد:**
 
@@ -388,9 +388,9 @@ public long Fibonacci(int n)
 </details>
 
 <details>
-  <summary><b>Avoid mental mapping</b></summary>
+  <summary><b>از نام گذاری ذهنی خودداری کنید</b></summary>
 
-Don’t force the reader of your code to translate what the variable means. **Explicit is better than implicit**.
+خواننده کد را مجبور نکنید که نیاز به ترجمه نام متغیر داشته باشد که این متغییر به چه معناست. **صریح بهتر از ضمنی است**.
 
  **بد:**
 
@@ -433,11 +433,11 @@ foreach (var location in locations)
 </details>
 
 <details>
-  <summary><b>Avoid magic string</b></summary>
+  <summary><b>از رشته های جادویی خودداری کنید</b></summary>
 
-Magic strings are string values that are specified directly within application code that have an impact on the application’s behavior. Frequently, such strings will end up being duplicated within the system, and since they cannot automatically be updated using refactoring tools, they become a common source of bugs when changes are made to some strings but not others.
+رشته های جادویی، رشته هایی هستند که در مستقیم در کد قرار دارند و روی رفتار اپلیکیشن ما تاثیر مستقیم دارند. چنین رشته های چندین بار در کد ما تکرار میشوند, و چون نمیتوانند به صورت اتوماتیک توسط ابزار تغییر کنند, آنها به منبع خطا ایجاد میشوند زمانی که تغییراتی در برخی از رشته ها ایجاد میشود.
 
-**Bad**
+**بد**
 
 ```csharp
 if (userRole == "Admin")
@@ -446,7 +446,7 @@ if (userRole == "Admin")
 }
 ```
 
-**Good**
+**خوب**
 
 ```csharp
 const string ADMIN_ROLE = "Admin"
@@ -456,7 +456,7 @@ if (userRole == ADMIN_ROLE)
 }
 ```
 
-Using this we only have to change in centralize place and others will adapt it.
+با استفاده از این ما باید فقط محل اصلی را تغییر دهیم و همگی با مقدار جدید سازگار میشوند.
 
 **[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
