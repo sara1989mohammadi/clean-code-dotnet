@@ -463,9 +463,9 @@ if (userRole == ADMIN_ROLE)
 </details>
 
 <details>
-  <summary><b>Don't add unneeded context</b></summary>
+  <summary><b>محتوای غیر ضروری را اضافه نکنید</b></summary>
 
-If your class/object name tells you something, don't repeat that in your variable name.
+اگر نام object/class شما نشان دهنده چیزی است اون رو در اسم متغییر هاتون اضافه نکنید.
 
  **بد:**
 
@@ -498,7 +498,7 @@ public class Car
 </details>
 
 <details>
-  <summary><b>Use meaningful and pronounceable variable names</b></summary>
+  <summary><b>از نام متغییر معنی دار و قابل تلفظ استفاده کنید</b></summary>
 
  **بد:**
 
@@ -517,7 +517,7 @@ var currentDate = DateTime.UtcNow.ToString("MMMM dd, yyyy");
 </details>
 
 <details>
-  <summary><b>Use the same vocabulary for the same type of variable</b></summary>
+  <summary><b>از کلمات یکسان برای تایپ های یکسان استفاده کنید</b></summary>
 
  **بد:**
 
@@ -539,9 +539,9 @@ GetUser();
 </details>
 
 <details>
-  <summary><b>Use searchable names (part 1)</b></summary>
+  <summary><b>از نام های قابل جتسجو استفاده کنید (پارت 1)</b></summary>
 
-We will read more code than we will ever write. It's important that the code we do write is readable and searchable. By _not_ naming variables that end up being meaningful for understanding our program, we hurt our readers. Make your names searchable.
+ما بیشتر از آنچه کد بنویسیم کد ها را میخوانیم. این خیلی مهم است کدی که مینویسیم قابلیت خواندن و جستجو کردن را داشته باشد. By _not_ naming variables that end up being meaningful for understanding our program, we hurt our readers. از نام های قابل جستجو استفاده کنید.
 
  **بد:**
 
@@ -583,7 +583,7 @@ Console.WriteLine(sr2.ReadToEnd());
 </details>
 
 <details>
-  <summary><b>Use searchable names (part 2)</b></summary>
+  <summary><b>از نام های قابل جتسجو استفاده کنید (پارت 2)</b></summary>
 
  **بد:**
 
@@ -626,7 +626,7 @@ if (person.PersonAccess == PersonAccess.ACCESS_UPDATE)
 </details>
 
 <details>
-  <summary><b>Use explanatory variables</b></summary>
+  <summary><b>از متغیرهای توضیحی استفاده کنید</b></summary>
 
  **بد:**
 
