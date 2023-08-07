@@ -1,6 +1,6 @@
 # اصول کد نویسی تمیز در .NET/.NET Core
 
-If you liked `clean-code-dotnet` project or if it helped you, please give a star :star: for this repository. That will not only help strengthen our .NET community but also improve skills about the clean code for .NET developers in around the world. Thank you very much :+1:
+اگر پروژه clean-code-dotnet را دوست داشتید یا اگر به شما کمک کرد، لطفاً یک ستاره ⭐ برای این مخزن بدهید. این نه تنها به تقویت جامعه دات نت ما کمک می کند، بلکه مهارت های مربوط به کد نویسی تمیز را برای توسعه دهندگان دات نت در سراسر جهان بهبود می بخشد. بسیار از شما متشکرم
 
 # فهرست محتوا
 - [Clean Code concepts adapted for .NET/.NET Core](#clean-code-concepts-adapted-for-netnet-core)
