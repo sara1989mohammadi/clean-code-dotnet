@@ -661,13 +661,13 @@ if(cityGroup.Success == true && zipCodeGroup.Success == true)
 </details>
 
 <details>
-  <summary><b>Use default arguments instead of short circuiting or conditionals</b></summary>
+  <summary><b>به جای شرط های تک خطی از آرگومان های پیشفرض استفاده کنید</b></summary>
 
 **Not good:**
 
-This is not good because `breweryName` can be `NULL`.
+این خوب نیست چون `breweryName` میتواند `NULL`.
 
-This opinion is more understandable than the previous version, but it better controls the value of the variable.
+این روش نسبت به نسخه قبلی قابل درکتر است اما مقدار متغییر را بهتر کنترل میکند.
 
 ```csharp
 public void CreateMicrobrewery(string name = null)
