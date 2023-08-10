@@ -693,14 +693,13 @@ public void CreateMicrobrewery(string breweryName = "Hipster Brew Co.")
 ## توابع
 
 <details>
-  <summary><b>Avoid side effects</b></summary>
+  <summary><b>از عوارض جانبی خودداری کنید</b></summary>
 
-A function produces a side effect if it does anything other than take a value in and return another value or values. A side effect could be writing to a file, modifying some global variable, or accidentally wiring all your money to a stranger.
+یک تابع باعث ایجاد عوارض جانبی میشود اگر کاری بیشتر از دریافت یک ورودی و بازگشت یک یا چند مقدار انجام دهد. این اثر جانبی میتونه نوشتن در یک فایل، تغییر متغییر های سراسری (global) و یا انتقال پول از حساب شما به حساب شخص دیگر باشد.
 
-Now, you do need to have side effects in a program on occasion. Like the previous example, you might need to write to a file. What you want to do is to centralize where you are doing this. Don't have several functions and classes that write to a particular file. Have one service that does it. One and only one.
+حالا شما نیاز به عوراض جانبی در یک برنامه در مواردی دارید. به عنوان نمونه در مثال قبلی, شما ممکن است نیاز به نوشتن در یک فایل داشته باشید. کاری که باید انجام دهید این است که عملکرد را متمرکز یک جا بکنید. تابع و کلاس های مختلفی نداشته باشید که در یک فایل خاص امکان نوشتن داشته باشند. فقط و فقط سرویس داشته باشید که این کار را انجام دهد.
 
-The main point is to avoid common pitfalls like sharing state between objects without any structure, using mutable data types that can be written to by anything, and not centralizing where your side effects occur. If you can do this, you will be happier
-than the vast majority of other programmers.
+نکته اصلی این است که از تله‌های رایج مانند اشتراک‌گذاری حالت بین اشیاء بدون هیچ ساختاری، استفاده از انواع داده‌های قابل تغییر که می‌تواند توسط هر چیزی روی آن نوشته شود، و متمرکز نکردن مکان‌هایی که عوارض جانبی شما رخ می‌دهد، اجتناب کنید. اگر بتوانید این کار را انجام دهید از اکثر برنامه نویس ها خوشحال تر خواهید بود.
 
  **بد:**
 
