@@ -1,6 +1,6 @@
 # اصول کد نویسی تمیز در .NET/.NET Core
 
-If you liked `clean-code-dotnet` project or if it helped you, please give a star :star: for this repository. That will not only help strengthen our .NET community but also improve skills about the clean code for .NET developers in around the world. Thank you very much :+1:
+اگر پروژه clean-code-dotnet را دوست داشتید یا اگر به شما کمک کرد، لطفاً یک ستاره ⭐ برای این مخزن بدهید. این نه تنها به تقویت جامعه دات نت ما کمک می کند، بلکه مهارت های مربوط به کد نویسی تمیز را برای توسعه دهندگان دات نت در سراسر جهان بهبود می بخشد. بسیار از شما متشکرم
 
 # فهرست محتوا
 - [Clean Code concepts adapted for .NET/.NET Core](#clean-code-concepts-adapted-for-netnet-core)
@@ -539,9 +539,9 @@ GetUser();
 </details>
 
 <details>
-  <summary><b>از نام های قابل جتسجو استفاده کنید (پارت 1)</b></summary>
+  <summary><b>از نام های قابل جستجو استفاده کنید (پارت 1)</b></summary>
 
-ما بیشتر از آنچه کد بنویسیم کد ها را میخوانیم. این خیلی مهم است کدی که مینویسیم قابلیت خواندن و جستجو کردن را داشته باشد. By _not_ naming variables that end up being meaningful for understanding our program, we hurt our readers. از نام های قابل جستجو استفاده کنید.
+ما بیشتر از آنچه کد بنویسیم کد ها را میخوانیم. این خیلی مهم است کدی که مینویسیم قابلیت خواندن و جستجو کردن را داشته باشد. با نامگذاری نکردن از متغیرهایی که در نهایت برای درک برنامه ما معنادار هستند، به خوانندگان خود صدمه می زنیم. نام خود را قابل جستجو کنید. از نام های قابل جستجو استفاده کنید.
 
  **بد:**
 
@@ -583,7 +583,7 @@ Console.WriteLine(sr2.ReadToEnd());
 </details>
 
 <details>
-  <summary><b>از نام های قابل جتسجو استفاده کنید (پارت 2)</b></summary>
+  <summary><b>از نام های قابل جستجو استفاده کنید (پارت 2)</b></summary>
 
  **بد:**
 
