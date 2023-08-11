@@ -740,7 +740,7 @@ Console.WriteLine(fullName); // His first name is Ryan, and his last name is McD
 </details>
 
 <details>
-  <summary><b>Avoid negative conditionals</b></summary>
+  <summary><b>از شروط منفی خودداری کنید</b></summary>
 
  **بد:**
 
@@ -775,10 +775,9 @@ if (IsDOMNodePresent(node))
 </details>
 
 <details>
-  <summary><b>Avoid conditionals</b></summary>
+  <summary><b>از شرط ها خودداری کنید</b></summary>
 
-This seems like an impossible task. Upon first hearing this, most people say, "how am I supposed to do anything without an `if` statement?" The answer is that you can use polymorphism to achieve the same task in many cases. The second question is usually, "well that's great but why would I want to do that?" The answer is a previous clean code concept we learned: a function should only do
-one thing. When you have classes and functions that have `if` statements, you are telling your user that your function does more than one thing. Remember, just do one thing.
+ممکن است این کار غیر ممکن بنظر برسد. اکثر مردم برای اولین بار این حرف را میشنوند میگویند, "چگونه میتوانم هر کاری را بدون دستور `if` انجام دهم؟" جواب این است که شما میتوانید با استفاده از چندریختی (polymorphism) در بسیاری از موارد به همان نتیجه برسید. معمولا دومین سوال این است, "خب این عالیه ولی چرا من باید بخواهم که این کار را انجام دهم؟" جواب مفهوم قبلی کلین کد است که یاد گرفتیم: تابع باید یک کار انجام دهم. زمانی که ما یک کلاس یا تابه داریم که دارای دستور `if` است, شما به کاربر خود میگوید که تابع شما بیشتر از یک کار انجام میدهد. به یاد داشته باشید فقط یک کار انجام دهم.
 
  **بد:**
 
@@ -848,7 +847,7 @@ class Cessna : IAirplane
 </details>
 
 <details>
-  <summary><b>Avoid type-checking (part 1)</b></summary>
+  <summary><b>از چک کردن نوع خودداری کنید (پارت 1)</b></summary>
 
  **بد:**
 
@@ -897,7 +896,7 @@ public Path TravelToTexas(object vehicle)
 </details>
 
 <details>
-  <summary><b>Avoid type-checking (part 2)</b></summary>
+  <summary><b>از چک کردن نوع خودداری کنید (پارت 2)</b></summary>
 
  **بد:**
 
@@ -928,9 +927,10 @@ public int Combine(int val1, int val2)
 </details>
 
 <details>
-  <summary><b>Avoid flags in method parameters</b></summary>
+  <summary><b>از استفاده از ورودی های تابع به عنوان flag خودداری کنید</b></summary>
 
-A flag indicates that the method has more than one responsibility. It is best if the method only has a single responsibility. Split the method into two if a boolean parameter adds multiple responsibilities to the method.
+یک flag نشان میدهد که تابع بیش از یک مسئولیت دارد. این خوب است که متد فقط یک وظیفه داشته باشد. اگر شرط باعث میشود که تابع چند مسئولیت داشته باشد آن را به توابع م
+کوچکتر بشکنید.
 
  **بد:**
 
