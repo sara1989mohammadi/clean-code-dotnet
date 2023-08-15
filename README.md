@@ -967,10 +967,10 @@ public void CreateTempFile(string name)
 </details>
 
 <details>
-  <summary><b>Don't write to global functions</b></summary>
+  <summary><b>روی تابع های سراسری(global) چیزی ننویسید</b></summary>
 
-Polluting globals is a bad practice in many languages because you could clash with another library and the user of your API would be none-the-wiser until they get an exception in production. Let's think about an example: what if you wanted to have configuration array.
-You could write global function like `Config()`, but it could clash with another library that tried to do the same thing.
+تغییر دادن مقادیر سراسری در بسیاری از زبان ها عمل بدی  است چون ممکنه با کتابخانه‌های دیگه تداخل ایجاد کند و کاربری که از API شما استفاده میکند، تا وقتی به خطایی برنخورد، متوجه اون نخواهد شد. بیاید یک مثال را ببینیم: چه میشود اگر شما بخواهید یک آرایه از تنظیمات داشته باشید.
+میتوانید یک تابع با عنوان `Config()` بنویسید, اما این ممکن است با یک کتابخانه دیگر که تلاش میکند کار یکسانی انجام دهد تداخل داشته باشد.
 
  **بد:**
 
@@ -1002,7 +1002,7 @@ class Configuration
 }
 ```
 
-Load configuration and create instance of `Configuration` class
+یک کلاس `Configuration` بسازید و تنظیمات را از آن بخوانید.
 
 ```csharp
 var configuration = new Configuration(new Dictionary<string, string>() {
@@ -1010,7 +1010,7 @@ var configuration = new Configuration(new Dictionary<string, string>() {
 });
 ```
 
-And now you must use instance of `Configuration` in your application.
+و شما باید یک نمونه از کلاس `Configuration` در برنامه خود بسازید.
 
 **[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
