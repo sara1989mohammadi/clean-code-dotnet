@@ -1,3 +1,4 @@
+<span style="font-family: 'Nazanin', Arial, sans-serif;">
 # اصول کد نویسی تمیز در .NET/.NET Core
 
 اگر پروژه clean-code-dotnet را دوست داشتید یا اگر به شما کمک کرد، لطفاً یک ستاره ⭐ برای این مخزن بدهید. این نه تنها به تقویت جامعه دات نت ما کمک می کند، بلکه مهارت های مربوط به کد نویسی تمیز را برای توسعه دهندگان دات نت در سراسر جهان بهبود می بخشد. بسیار از شما متشکرم
@@ -3235,3 +3236,6 @@ private int ConvertTo32BitInt(int value)
 [![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
 To the extent possible under law, [thangchung](https://github.com/thangchung) has waived all copyright and related or neighboring rights to this work.
+
+
+</span>
