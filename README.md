@@ -2359,6 +2359,8 @@ public class Manager
   <summary><b>خود را تکرار نکنید Don’t repeat yourself(DRY)</b></summary>
 **
 Try to observe the [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) principle.
+
+  
 سعی کنید اصل (https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) را رعایت کنید.**
 
 
