@@ -2619,18 +2619,16 @@ It is extremely well-written, and includes guidance on API design and the proper
 ## مدیریت خطا
 
 <details>
-  <summary><b>Basic concept of error handling</b></summary>
+  <summary><b>مفهوم پایه مدیریت خطا Basic concept of error handling</b></summary>
 
-Thrown errors are a good thing! They mean the runtime has successfully identified when something in your program has gone wrong and it's letting you know by stopping function execution on the current stack, killing the process (in .NET/.NET Core), and notifying you in the console with a stack trace.
+خطاهای پرتاب شده چیز خوبی است!این بدان معناست که زمان اجرا با موفقیت تشخیص داده شده است که چیزی در برنامه شما اشتباه رخ داده است و به شما این امکان را می دهد تا با متوقف کردن اجرای عملکرد روی پشته (stack) فعلی ، این process را بکشید (در NET / .NET Core) ،و از طریق stack trace در کنسول به اطلاع شما می رساند.
 
 </details>
 
 <details>
-  <summary><b>Don't use 'throw ex' in catch block</b></summary>
+  <summary><b>عدم استفاده از 'throw ex' در بلوک کچ Don't use 'throw ex' in catch block</b></summary>
 
-If you need to re-throw an exception after catching it, use just 'throw'
-By using this, you will save the stack trace. But in the bad option below,
-you will lost the stack trace.
+اگر شما نیاز به پرتاب دوباره خطا بعد از به دام انداختن ان را دارید،فقط از "throw" استفاده کنید ، با استفاده از این ، شما stack trace ذخیره می کنید.اما در گزینه بد زیر ، stack trace را از دست خواهید داد.
 
  **بد:**
 
@@ -2665,9 +2663,9 @@ catch (Exception ex)
 </details>
 
 <details>
-  <summary><b>Don't ignore caught errors</b></summary>
+  <summary><b>عدم نادیده گرفتن خطاهای گرفتار شده Don't ignore caught errors</b></summary>
 
-Doing nothing with a caught error doesn't give you the ability to ever fix or react to said error. Throwing the error isn't much better as often times it can get lost in a sea of things printed to the console. If you wrap any bit of code in a `try/catch` it means you think an error may occur there and therefore you should have a plan, or create a code path, for when it occurs.
+انجام ندادن کاری با خطای گرفتار شده، همیشه امکان اصلاح یا واکنش نشان داده به خطای گفته شده را نمی دهد. پرتاب خطا خیلی خوب نیست چون اغلب اوقات می توانید در دریا از چیزهایی که روی کنسول چاپ می شود گم شوید.اگر هر بخشی از کد را در try/catch قرار دهید ، به این معنی است که فکر می کنید ممکن است خطایی در آنجا رخ دهد و بنابراین باید برنامه ای داشته باشید ،یا یک مسیر کد ایجاد کنید،برای وقتی اتفاق می افتد.
 
  **بد:**
 
@@ -2703,10 +2701,9 @@ catch (Exception error)
 </details>
 
 <details>
-  <summary><b>Use multiple catch block instead of if conditions.</b></summary>
+  <summary><b>استفاده از چند بلوک catch بجای استفاده از شرط ها Use multiple catch block instead of if conditions.</b></summary>
 
-If you need to take action according to type of the exception,
-you better use multiple catch block for exception handling.
+اگر شما نیاز به انجام کاری نسبت به نوع استثناء دارید ،بهتر است از بلوک چندگانه catch برای مدیریت کردن استثنا استفاده کنید.
 
  **بد:**
 
@@ -2751,10 +2748,9 @@ catch (TaskSchedulerException ex)
 </details>
 
 <details>
-  <summary><b>Keep exception stack trace when rethrowing exceptions</b></summary>
+  <summary><b>هنگام رخ دادن استثنا stack trace را حفظ کنید Keep exception stack trace when rethrowing exceptions</b></summary>
 
-C# allows the exception to be rethrown in a catch block using the `throw` keyword. It is a bad practice to throw a caught exception using `throw e;`. This statement resets the stack trace. Instead use `throw;`. This will keep the stack trace and provide a deeper insight about the exception.
-Another option is to use a custom exception. Simply instantiate a new exception and set its inner exception property to the caught exception with throw `new CustomException("some info", e);`. Adding information to an exception is a good practice as it will help with debugging. However, if the objective is to log an exception then use `throw;` to pass the buck to the caller.
+سی شارپ C# اجازه می دهد تا استثناء در یک catch block با استفاده از کلمه کلیدی throw دوباره مورد استفاده قرار گیرد. یک کار بد این است که یک استثناء گرفتار شده را با استفاده از throw e; پرتاپ کنید.این عبارت ردیابی پشته (stack trace) را reset می کند.بجای آن از throw; استفاده کنید.این باعث می شود ردیابی پشته حفظ شود و بینشی عمیق تر درباره این استثنا ارائه دهد.گزینه دیگر استفاده از یک استثناء سفارشی است.به سادگی نمونه سازی یک استثناء جدید و پرتاب new CustomException("some info", e); خاصیت استثنایی درونی خود را به استثناء گرفتار شده تبدیل کنید.اضافه کردن اطلاعات به استثناء یک عمل خوب است زیرا به اشکال زدایی کمک می کند.با این حال،اگر هدف این است که یک استثنا را log کنید ، از throw; استفاده کنید. برای انتقال buck به صدا زننده.
 
  **بد:**
 
