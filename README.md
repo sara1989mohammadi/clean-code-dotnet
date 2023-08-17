@@ -1542,19 +1542,19 @@ InventoryTracker("apples", request, "www.inventory-awesome.io");
 ## اشیاوساختاردادهها
 
 <details>
-  <summary><b>Use getters and setters</b></summary>
+  <summary><b>استفاده از گتر و ستر Use getters and setters</b></summary>
 
-In C# / VB.NET you can set `public`, `protected` and `private` keywords for methods.
-Using it, you can control properties modification on an object.
+در C # / VB.NET می توانید کلمات کلیدی public ، protected و private را برای متدها تنظیم کنید.با استفاده از آن ، می توانید modification پراپرتی ها در یک شی را کنترل کنید.
 
-- When you want to do more beyond getting an object property, you don't have to look up and change every accessor in your codebase.
-- Makes adding validation simple when doing a `set`.
-- Encapsulates the internal representation.
-- Easy to add logging and error handling when getting and setting.
-- Inheriting this class, you can override default functionality.
-- You can lazy load your object's properties, let's say getting it from a server.
 
-Additionally, this is part of Open/Closed principle, from object-oriented design principles.
+- وقتی می خواهید کارهای دیگری فراتر از get کردن(دریافت) یک property شی انجام دهید ، لازم نیست که همه accessor را در codebase خود جستجو کنید و تغییر دهید.
+- اضافه کردن اعتبارسنجی هنگام set کردن، ساده است.
+- نمایش-representation داخلی را کپسوله میکند.
+- هنگام get و set کردن ، اضافه کردن logging و مدیریت خطاها آسان است.
+- با ارث بردن این کلاس ، می توانید عملکرد پیش فرض را override کنید.
+- میتوانید پراپرتی های شی خود را lazy load کنید،بیایید بگوییم که آن را از یک سرور get می کنیم.
+
+علاوه بر این ، این بخشی از اصل Open/Closed است (solid)، از اصول طراحی شی گرا.
 
  **بد:**
 
@@ -1618,7 +1618,7 @@ balance = bankAccount.Balance;
 </details>
 
 <details>
-  <summary><b>Make objects have private/protected members</b></summary>
+  <summary><b>ایجاد اشیایی که را دارای اعضای خصوصی / محافظت هستند Make objects have private/protected members</b></summary>
 
  **بد:**
 
