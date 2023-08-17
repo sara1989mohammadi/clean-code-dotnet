@@ -1017,16 +1017,20 @@ var configuration = new Configuration(new Dictionary<string, string>() {
 </details>
 
 <details>
-  <summary><b>Don't use a Singleton pattern</b></summary>
+  <summary><b>عدم استفاده از الگوی سینگلتون Don't use a Singleton pattern</b></summary>
 
 Singleton is an [anti-pattern](https://en.wikipedia.org/wiki/Singleton_pattern). Paraphrased from Brian Button:
+الگوی Singleton یک ضد الگوی است[anti-pattern](https://en.wikipedia.org/wiki/Singleton_pattern).تفسیر از Brian Button:
+1-آنها به عنوان یک **global instance** مورد استفاده قرار می گیرند ،چرا اینقدر بد است؟از آنجا که **وابستگی برنامه** را در **کد پنهان** می کنید ،به جای نمایش آنها از طریق interface ها. ایجاد چیزی global برای جلوگیری از عبور آن در اطراف بوی کد[code smell](https://en.wikipedia.org/wiki/Code_smell) است.
 
-1. They are generally used as a **global instance**, why is that so bad? Because **you hide the dependencies** of your application in your code, instead of exposing them through the interfaces. Making something global to avoid passing it around is a [code smell](https://en.wikipedia.org/wiki/Code_smell).
-2. They violate the [single responsibility principle](#single-responsibility-principle-srp): by virtue of the fact that **they control their own creation and lifecycle**.
-3. They inherently cause code to be tightly [coupled](https://en.wikipedia.org/wiki/Coupling_%28computer_programming%29). This makes faking them out under **test rather difficult** in many cases.
-4. They carry state around for the lifetime of the application. Another hit to testing since **you can end up with a situation where tests need to be ordered** which is a big no for unit tests. Why? Because each unit test should be independent from the other.
+2-آنها اصل مسئولیت واحد [single responsibility principle](#single-responsibility-principle-srp) را نقض می کنند:**به این دلیل که آنها کنترل ایجاد و چرخه زندگی خود را کنترل می کنند.**
 
-There is also very good thoughts by [Misko Hevery](http://misko.hevery.com/about/) about the [root of problem](http://misko.hevery.com/2008/08/25/root-cause-of-singletons/).
+3-اینها ذاتاً باعث می شوند كه كد به هم اتصال محکم و سفت [coupled](https://en.wikipedia.org/wiki/Coupling_%28computer_programming%29) داشته باشند.این امر باعث می شود که در بسیاری از موارد **test آنها بسیار دشوار شود.**
+
+4-آنها حول و حوش lifetime برنامه کاربرد دارند.ضربه دیگر به test کردن از آنجا که می توانید با شرایطی روبرو شوید که تست ها باید سفارشی شوند که به بزرگی unit test ها نیستند. چرا؟ زیرا هر تست واحد باید از دیگری مستقل باشد.
+همچنین خاطرات بسیار خوبی توسط [Misko Hevery](http://misko.hevery.com/about/) در مورد ریشه مشکل[root of problem](http://misko.hevery.com/2008/08/25/root-cause-of-singletons/) وجود دارد.
+
+
 
  **بد:**
 
@@ -1069,26 +1073,25 @@ class DBConnection
     // ...
 }
 ```
-
-Create instance of `DBConnection` class and configure it with [Option pattern](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/options?view=aspnetcore-2.1).
+نمونه ای از کلاس DBConnection ایجاد کنید و آن را با [Option pattern](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/options?view=aspnetcore-2.1) پیکربندی کنید.
 
 ```csharp
 var options = <resolve from IOC>;
 var connection = new DBConnection(options);
 ```
 
-And now you must use instance of `DBConnection` in your application.
+و اکنون شما باید از DBConnection در برنامه خود استفاده کنید.
 
 **[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 </details>
 
 <details>
-  <summary><b>Function arguments (2 or fewer ideally)</b></summary>
+  <summary><b>آرگومان های تابع(دو یا کمتر ایده آل است) Function arguments (2 or fewer ideally)</b></summary>
 
-Limiting the amount of function parameters is incredibly important because it makes testing your function easier. Having more than three leads to a combinatorial explosion where you have to test tons of different cases with each separate argument.
+محدود کردن مقدار پارامترهای تابع یا متد فوق العاده مهم است زیرا test متد شما را آسان تر می کند.داشتن بیش از سه مورد منجر به یک انفجار ترکیبی می شود که در آن باید موارد مختلفی را با هر آرگومان جداگانه test کنید.
 
-Zero arguments is the ideal case. One or two arguments is ok, and three should be avoided. Anything more than that should be consolidated. Usually, if you have more than two arguments then your function is trying to do too much. In cases where it's not, most of the time a higher-level object will suffice as an argument.
+آرگومان صفر مورد ایده آل است.یک یا دو آرگومان خوب است ،و از سه آرگومان باید اجتناب شود.هر چیزی بیشتر از این تعداد باشد باید یکی شوند.معمولاً اگر بیش از دو آرگومان داشته باشید ، متد شما در تلاش بیش از حد است.در مواردی که اینگونه نباشد ، بیشتر اوقات یک شی سطح بالاتر به عنوان یک آرگومان کافی خواهد بود.
 
  **بد:**
 
@@ -1129,10 +1132,9 @@ public void CreateMenu(MenuConfig config)
 </details>
 
 <details>
-  <summary><b>Functions should do one thing</b></summary>
+  <summary><b>توابع باید یک کار را انجام دهند Functions should do one thing</b></summary>
 
-This is by far the most important rule in software engineering. When functions do more than one thing, they are harder to compose, test, and reason about. When you can isolate a function to just one action, they can be refactored easily and your code will read much
-cleaner. If you take nothing else away from this guide other than this, you'll be ahead of many developers.
+این مهمترین قانون در مهندسی نرم افزار است.وقتی متدها بیش از یک کار را انجام دهند ، نوشتن ، آزمایش و استدلال در مورد آنها سخت تر است.هنگامی که می توانید یک عملکرد را تنها با یک عمل جدا کنید ، می توان آنها را به راحتی refactored کرد و کد شما بسیار تمیز تر خوانده می شود.اگر این راهنما را رعایت کنید، شما از بسیاری از توسعه دهندگان جلوتر خواهید بود.
 
  **بد:**
 
@@ -1170,7 +1172,7 @@ public List<Client> GetActiveClients(string[] clients)
 </details>
 
 <details>
-  <summary><b>Function names should say what they do</b></summary>
+  <summary><b>اسامی تابع باید آنچه را انجام می دهند بگویند Function names should say what they do</b></summary>
 
  **بد:**
 
@@ -1213,11 +1215,11 @@ message.Send();
 </details>
 
 <details>
-  <summary><b>Functions should only be one level of abstraction</b></summary>
+  <summary><b>توابع فقط باید یک سطح انتزاع داشته باشند Functions should only be one level of abstraction</b></summary>
 
-> Not finished yet
+> هنوز تمام نشده
 
-When you have more than one level of abstraction your function is usually doing too much. Splitting up functions leads to reusability and easier testing.
+هنگامی که بیش از یک سطح انتزاع دارید متد شما معمولاً خیلی زیاد انجام می شود.تقسیم توابع منجر به قابلیت استفاده مجدد و آزمایش آسانتر می شود.
 
  **بد:**
 
@@ -1253,8 +1255,8 @@ public string ParseBetterJSAlternative(string code)
 
 **Bad too:**
 
-We have carried out some of the functionality, but the `ParseBetterJSAlternative()` function is still very complex and not testable.
 
+ما برخی از functionality را انجام داده ایم ، اما عملکرد ()ParseBetterJSAlternative هنوز بسیار پیچیده است و قابل آزمایش نیست
 ```csharp
 public string Tokenize(string code)
 {
@@ -1300,7 +1302,8 @@ public string ParseBetterJSAlternative(string code)
 
 **خوب:**
 
-The best solution is move out the dependencies of `ParseBetterJSAlternative()` function.
+
+بهترین راه حل این است که وابستگی های تابع () ParseBetterJSAlternativeرا خارج کنید.
 
 ```csharp
 class Tokenizer
@@ -1367,9 +1370,9 @@ class BetterJSAlternative
 </details>
 
 <details>
-  <summary><b>Function callers and callees should be close</b></summary>
+  <summary><b>تابع صدا زننده و توابع فراخوانی شده باید نزدیک هم باشند Function callers and called should be close</b></summary>
 
-If a function calls another, keep those functions vertically close in the source file. Ideally, keep the caller right above the callee. We tend to read code from top-to-bottom, like a newspaper. Because of this, make your code read that way.
+اگر یک تابع، تابع دیگری را صدا می کند ، آن توابع را به صورت عمودی در فایل منبع نگه دارید.در حالت ایده آل ، متد صدا زننده را درست بالای متد فراخوانی شده نگه دارید.ما تمایل داریم مانند روزنامه کد را از بالا به پایین بخوانیم.به همین دلیل ، کد خود را به این روش بخوانید.
 
  **بد:**
 
@@ -1477,7 +1480,7 @@ review.PerfReview();
 </details>
 
 <details>
-  <summary><b>Encapsulate conditionals</b></summary>
+  <summary><b>کپسوله کردن شرط ها Encapsulate conditionals</b></summary>
 
  **بد:**
 
@@ -1502,9 +1505,9 @@ if (article.IsPublished())
 </details>
 
 <details>
-  <summary><b>Remove dead code</b></summary>
+  <summary><b>حذف کدهای مرده Remove dead code</b></summary>
 
-Dead code is just as bad as duplicate code. There's no reason to keep it in your codebase. If it's not being called, get rid of it! It will still be safe in your version history if you still need it.
+کد مرده به همان اندازه کد تکراری بد است.هیچ دلیلی برای نگه داشتن آن در codebase شما وجود ندارد.اگر آن را صدا نمیزنید ، از شر آن خلاص شوید! اگر هنوز به آن نیاز دارید ، در version history شما ایمن خواهد بود.
 
  **بد:**
 
