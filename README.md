@@ -1908,7 +1908,7 @@ class UserSettings
 </details>
 
 <details>
-  <summary><b>Open/Closed Principle (OCP)</b></summary>
+  <summary><b>اصل باز – بسته (Open/Closed Principle) (OCP)</b></summary>
 
 As stated by Bertrand Meyer, "software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification." What does that mean though? This principle basically states that you should allow users to add new functionalities without changing existing code.
 
@@ -2021,7 +2021,7 @@ class HttpRequester
 </details>
 
 <details>
-  <summary><b>Liskov Substitution Principle (LSP)</b></summary>
+  <summary><b>اصل جایگزینی لیسکوف (Liskov Substitution Principle)(LSP)</b></summary>
 
 This is a scary term for a very simple concept. It's formally defined as "If S is a subtype of T, then objects of type T may be replaced with objects of type S (i.e., objects of type S may substitute objects of type T) without altering any of the desirable properties of that program (correctness, task performed,
 etc.)." That's an even scarier definition.
@@ -2163,7 +2163,7 @@ RenderLargeRectangles(shapes);
 </details>
 
 <details>
-  <summary><b>Interface Segregation Principle (ISP)</b></summary>
+  <summary><b>اصل تفکیک رابط‌ها (Interface Segregation Principle) (ISP)</b></summary>
 
 ISP states that "Clients should not be forced to depend upon interfaces that they do not use."
 
@@ -2253,7 +2253,7 @@ public class Robot : IWorkable
 </details>
 
 <details>
-  <summary><b>Dependency Inversion Principle (DIP)</b></summary>
+  <summary><b>اصل وارونگی وابستگی (Dependency Inversion Principle) (DIP)</b></summary>
 
 This principle states two essential things:
 
