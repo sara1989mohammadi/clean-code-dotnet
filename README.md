@@ -1818,9 +1818,9 @@ class Employee
 ## سالید
 
 <details>
-  <summary><b>What is SOLID?</b></summary>
-
-**SOLID** is the mnemonic acronym introduced by Michael Feathers for the first five principles named by Robert Martin, which meant five basic principles of object-oriented programming and design.
+  <summary><b>سالید چیست؟</b></summary>
+**سالید** مخفف یادگاری است که توسط Michael Feathers برای پنج اصل اول نامگذاری شده توسط رابرت مارتین معرفی شده است که به معنای پنج اصل اساسی برنامه نویسی و طراحی شی گرا است
+  
 
 - [S: Single Responsibility Principle (SRP)](#single-responsibility-principle-srp)
 - [O: Open/Closed Principle (OCP)](#openclosed-principle-ocp)
