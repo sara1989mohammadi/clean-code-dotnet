@@ -1,7 +1,7 @@
 <span style="font-family: 'Nazanin', Arial, sans-serif;">
 
 <div style="text-align: right;">
-#اصول کد نویسی تمیز در .NET/.NET Core
+اصول کد نویسی تمیز در .NET/.NET Core
   
 </div>
 
