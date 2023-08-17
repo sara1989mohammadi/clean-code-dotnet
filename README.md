@@ -1833,9 +1833,9 @@ class Employee
 <details>
   <summary><b>اصل تک مسئولیتی (Single Responsibility Principle) (SRP)</b></summary>
 
-As stated in Clean Code, "There should never be more than one reason for a class to change". It's tempting to jam-pack a class with a lot of functionality, like when you can only take one suitcase on your flight. The issue with this is that your class won't be conceptually cohesive and it will give it many reasons to change. Minimizing the amount of times you need to change a class is important.
+همانطور که در Clean Code بیان شده است ،"هرگز نباید بیش از یک دلیل برای تغییر کلاس وجود داشته باشد". ایجاد یک کلاس با قابلیت های زیادی وسوسه انگیز است ، مانند زمانی که فقط می توانید یک چمدان را در پرواز بگیرید.مسئله این است که کلاس شما از نظر مفهومی منسجم نخواهد بود و دلایل زیادی برای تغییر ایجاد می کند.به حداقل رساندن مقدار زمان لازم برای تغییر یک کلاس مهم است.
 
-It's important because if too much functionality is in one class and you modify a piece of it, it can be difficult to understand how that will affect other dependent modules in your codebase.
+این مهم است زیرا اگر عملکرد(functionality) بیش از حد در یک کلاس باشد و شما یک تکه از آن را تغییر دهید ،درک این مسئله که سایر ماژولهای وابسته در codebase شما چه تاثیری خواهد داشت دشوار خواهد بود.
 
  **بد:**
 
@@ -1910,7 +1910,7 @@ class UserSettings
 <details>
   <summary><b>اصل باز – بسته (Open/Closed Principle) (OCP)</b></summary>
 
-As stated by Bertrand Meyer, "software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification." What does that mean though? This principle basically states that you should allow users to add new functionalities without changing existing code.
+همانطور که Bertrand Meyer گفته است،"موجودیت های نرم افزاری (کلاس ها ، ماژول ها ، توابع و غیره) باید برای گسترش باز اما برای اصلاح بسته باشند.". معنی این چیست؟این اصل اساساً بیان می کند که شما باید به کاربران اجازه دهید بدون تغییر کد موجود ، ویژگی های جدیدی(functionalities) اضافه کنند.
 
  **بد:**
 
@@ -2023,11 +2023,9 @@ class HttpRequester
 <details>
   <summary><b>اصل جایگزینی لیسکوف (Liskov Substitution Principle)(LSP)</b></summary>
 
-This is a scary term for a very simple concept. It's formally defined as "If S is a subtype of T, then objects of type T may be replaced with objects of type S (i.e., objects of type S may substitute objects of type T) without altering any of the desirable properties of that program (correctness, task performed,
-etc.)." That's an even scarier definition.
+این یک اصطلاح ترسناک برای یک مفهوم بسیار ساده است.به طور رسمی اینگونه تعریف می شود "اگر S زیر مجموعه ای از T باشد ، ممکن است اشیاء از نوع T با اشیاء از نوع S جایگزین شوند (به عنوان مثال اشیاء از نوع S می توانند اشیاء نوع T را جایگزین کنند) بدون اینکه هیچ یک از خصوصیات مطلوب آن برنامه را تغییر دهند. (از نظر درستی ، انجام کار و غیره). ". حتی این یک تعریف ترسناک است.
 
-The best explanation for this is if you have a parent class and a child class, then the base class and child class can be used interchangeably without getting incorrect results. This might still be confusing, so let's take a look at the classic Square-Rectangle example. Mathematically, a square is a rectangle, but if you model it using the "is-a" relationship via inheritance, you quickly
-get into trouble.
+بهترین توضیح برای این امر، اگر کلاس parent و کلاس child دارید ،پس کلاس پایه و کلاس child بدون گرفتن نتایج نادرست قابل تعویض است.ممکن است هنوز هم گیج کننده باشد ،بنابراین اجازه دهید نگاهی به مثال کلاسیک مربع-مستطیل بیندازیم.از نظر ریاضی ، یک مربع ،مستطیل است اما اگر آن را با استفاده از مدل رابطه "is-a" (هست یک) از طریق وراثت الگوبرداری کنید ، به سرعت دچار مشکل می شوید.
 
  **بد:**
 
@@ -2165,10 +2163,9 @@ RenderLargeRectangles(shapes);
 <details>
   <summary><b>اصل تفکیک رابط‌ها (Interface Segregation Principle) (ISP)</b></summary>
 
-ISP states that "Clients should not be forced to depend upon interfaces that they do not use."
+اصل ISP میگوید که "Client ها نباید مجبور شوند به Interface هایی که از آنها استفاده نمی کنند وابستگی داشته باشند.".
 
-A good example to look at that demonstrates this principle is for
-classes that require large settings objects. Not requiring clients to setup huge amounts of options is beneficial, because most of the time they won't need all of the settings. Making them optional helps prevent having a "fat interface".
+یک مثال خوب برای نشان دادن این اصل است کلاسهایی است که به اشیاء تنظیمات بزرگ احتیاج دارند(large settings objects).عدم نیاز به clientها برای تنظیم مقدار زیادی از گزینه ها مفید است ، زیرا بیشتر اوقات به همه تنظیمات نیاز نخواهند داشت. ایجاد اختیاری آنها در جلوگیری از داشتن "رابط چاق"("fat interface") کمک می کند.
 
  **بد:**
 
@@ -2255,13 +2252,15 @@ public class Robot : IWorkable
 <details>
   <summary><b>اصل وارونگی وابستگی (Dependency Inversion Principle) (DIP)</b></summary>
 
-This principle states two essential things:
+این اصل دو چیز اساسی را بیان می کند:
 
-1. High-level modules should not depend on low-level modules. Both should depend on abstractions.
-2. Abstractions should not depend upon details. Details should depend on abstractions.
+1-ماژول های سطح بالا (High-level) نباید به ماژول های سطح پایین (low-level) بستگی داشته باشند.هر دو باید به انتزاع(abstractions) بستگی داشته باشند.
 
-This can be hard to understand at first, but if you've worked with .NET/.NET Core framework, you've seen an implementation of this principle in the form of [Dependency Injection](https://martinfowler.com/articles/injection.html) (DI). While they are not identical concepts, DIP keeps high-level modules from knowing the details of its low-level modules and setting them up.
-It can accomplish this through DI. A huge benefit of this is that it reduces the coupling between modules. Coupling is a very bad development pattern because it makes your code hard to refactor.
+2-انتزاع (abstractions) نباید به جزئیات بستگی داشته باشد.جزئیات باید به انتزاع بستگی داشته باشد.
+
+درک این در ابتدا دشوار است ،اما اگر با NET/.NET Core framework کار کرده اید ، شما شاهد پیاده سازی این اصل در قالب [Dependency Injection](https://martinfowler.com/articles/injection.html) (DI) هستید.در حالی که مفاهیم آنها یکسان نیستند ،DIP ماژول های سطح بالا را از دانستن جزئیات ماژول های سطح پایین و تنظیم آنها حفظ می کند.می تواند این کار را از طریق DI انجام دهد.فایده بزرگ این امر این است که اتصال بین ماژول ها را کاهش می دهد. کوپلینگ (Coupling - اتصال)یک الگوی توسعه خیلی بد است زیرا باعث می شود تا کد شما سخت refactor شود.
+
+
 
  **بد:**
 
