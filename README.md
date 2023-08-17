@@ -2971,9 +2971,9 @@ indent_size = 2
 ## کامنت ها
 
 <details>
-  <summary><b>Avoid positional markers</b></summary>
+  <summary><b>خودداری از نشانگرهای موقعیتی Avoid positional markers</b></summary>
 
-They usually just add noise. Let the functions and variable names along with the proper indentation and formatting give the visual structure to your code.
+آنها معمولاً فقط سر و صدا می کنند.بگذارید توابع و نام های متغیر به همراه تورفتگی و قالب بندی مناسب ، ساختار بصری را به کد شما بدهند.
 
  **بد:**
 
@@ -3038,9 +3038,9 @@ void Actions()
 </details>
 
 <details>
-  <summary><b>Don't leave commented out code in your codebase</b></summary>
+  <summary><b>کامنت ها را در خارج از کد اصلی قرار ندهید Don't leave commented out code in your codebase</b></summary>
 
-Version control exists for a reason. Leave old code in your history.
+کنترل نسخهVersion control به یک دلیل وجود دارد.کد قدیمی را در history بگذارید.
 
  **بد:**
 
@@ -3062,9 +3062,9 @@ doStuff();
 </details>
 
 <details>
-  <summary><b>Don't have journal comments</b></summary>
+  <summary><b>کامنت ژورنالی نداشته باشید Don't have journal comments</b></summary>
 
-Remember, use version control! There's no need for dead code, commented code, and especially journal comments. Use `git log` to get history!
+به یاد داشته باشید ، از کنترل نسخه استفاده کنید! دیگر نیازی به کدهای مرده ، کد comment شده و به خصوص comment های ژورنالی نیست.برای دریافت تاریخچه از log git استفاده کنید! 
 
  **بد:**
 
@@ -3095,9 +3095,10 @@ public int Combine(int a,int b)
 </details>
 
 <details>
-  <summary><b>Only comment things that have business logic complexity</b></summary>
+  <summary><b>فقط چیزهایی را کامنت کنید که پیچیدگی منطق تجاری دارند Only comment things that have business logic complexity </b></summary>
 
-Comments are an apology, not a requirement. Good code _mostly_ documents itself.
+نظرات عذرخواهی است ، نه یک الزام.کد خوب اغلب خود را مستند می کند.
+
 
  **بد:**
 
@@ -3141,8 +3142,7 @@ public int HashIt(string data)
 }
 ```
 
-If a comment explains WHAT the code is doing, it is probably a useless comment and can be implemented with a well named variable or function. The comment in the previous code could be replaced with a function named `ConvertTo32bitInt` so this comment is still useless.
-However it would be hard to express by code WHY the developer chose djb2 hash algorithm instead of sha-1 or another hash function. In that case a comment is acceptable.
+اگر یک کامنت توضیح داد که کد درحال انجام چیست ،احتمالاً این یک کامنت بی فایده است و می تواند با یک نام متغیر یا تابعی که به خوبی شناخته شده باشد ، پیاده سازی شود.کامنت در کد قبلی می تواند با تابعی به نام ConvertTo32bitInt جایگزین شود ، بنابراین این کامنت هنوز بی فایده است.با این وجود دشوار است که با کدی بیان کنید چرا توسعه دهنده الگوریتم هش djb2 را به جای sha-1 یا یک تابع هش دیگر انتخاب می کند.در این صورت یک کامنت قابل قبول است.
 
 **خوب:**
 
