@@ -4,8 +4,6 @@
 
 # فهرست محتوا
 - [مفاهیم Clean Code در .NET/.NET Core ](#clean-code-concepts-adapted-for-netnet-core)
-
-- مفاهیم Clean Code در .NET/.NET Core 
 - [فهرست محتوا](#فهرست-محتوا)
 - [مقدمه](#مقدمه)
 - [کد تمیز دات نت](#کد-تمیز-دات-نت)
