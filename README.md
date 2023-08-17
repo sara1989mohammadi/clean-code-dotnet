@@ -16,7 +16,7 @@
   - [تستهای واحد](#تستهای-واحد)
   - [همروندی](#همروندی)
   - [مدیریت خطا](#مدیریت-خطا)
-  - [قالب بندی](#قالب بندی)
+  - [قالب بندی](#قالب-بندی)
   - [کامنت ها](#کامنت-ها)
 - [Other Clean Code Resources](#other-clean-code-resources)
   - [Other Clean Code Lists](#other-clean-code-lists)
@@ -2802,7 +2802,7 @@ catch (Exception error)
 
 </details>
 
-## قالب بندی
+## قالب-بندی
 
 <details>
   <summary><b>از فایل .editorconfig استفاده کنید.</b></summary>
