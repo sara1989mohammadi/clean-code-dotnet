@@ -3,7 +3,9 @@
 اگر پروژه clean-code-dotnet را دوست داشتید یا اگر به شما کمک کرد، لطفاً یک ستاره ⭐ برای این مخزن بدهید. این نه تنها به تقویت جامعه دات نت ما کمک می کند، بلکه مهارت های مربوط به کد نویسی تمیز را برای توسعه دهندگان دات نت در سراسر جهان بهبود می بخشد. بسیار از شما متشکرم
 
 # فهرست محتوا
-- [Clean Code concepts adapted for .NET/.NET Core](#clean-code-concepts-adapted-for-netnet-core)
+- [مفاهیم Clean Code در .NET/.NET Core ](#clean-code-concepts-adapted-for-netnet-core)
+
+- مفاهیم Clean Code در .NET/.NET Core 
 - [فهرست محتوا](#فهرست-محتوا)
 - [مقدمه](#مقدمه)
 - [کد تمیز دات نت](#کد-تمیز-دات-نت)
