@@ -16,7 +16,7 @@
   - [تستهای واحد](#تستهای-واحد)
   - [همروندی](#همروندی)
   - [مدیریت خطا](#مدیریت-خطا)
-  - [Formatting](#formatting)
+  - [قالب بندی](#قالب بندی)
   - [کامنت ها](#کامنت-ها)
 - [Other Clean Code Resources](#other-clean-code-resources)
   - [Other Clean Code Lists](#other-clean-code-lists)
@@ -2802,18 +2802,18 @@ catch (Exception error)
 
 </details>
 
-## Formatting
+## قالب بندی
 
 <details>
-  <summary><b>Uses <i>.editorconfig</i> file</b></summary>
+  <summary><b>از فایل .editorconfig استفاده کنید.</b></summary>
 
  **بد:**
 
-Has many code formatting styles in the project. For example, indent style is `space` and `tab` mixed in the project.
+دارای بسیاری از سبک های قالب بندی کد در پروژه است. به عنوان مثال ، سبک تورفتگی space و tab مخلوط شده در پروژه است.
 
 **خوب:**
 
-Define and maintain consistent code style in your codebase with the use of an `.editorconfig` file
+با استفاده از یک فایل .editorconfig سبک کد سازگار را در codebase خود تعریف و حفظ کنید.
 
 ```csharp
 root = true
