@@ -1041,6 +1041,7 @@ var configuration = new Configuration(new Dictionary<string, string>() {
 
 Singleton is an [anti-pattern](https://en.wikipedia.org/wiki/Singleton_pattern). Paraphrased from Brian Button:
 الگوی Singleton یک ضد الگوی است[anti-pattern](https://en.wikipedia.org/wiki/Singleton_pattern).تفسیر از Brian Button:
+
 1-آنها به عنوان یک **global instance** مورد استفاده قرار می گیرند ،چرا اینقدر بد است؟از آنجا که **وابستگی برنامه** را در **کد پنهان** می کنید ،به جای نمایش آنها از طریق interface ها. ایجاد چیزی global برای جلوگیری از عبور آن در اطراف بوی کد[code smell](https://en.wikipedia.org/wiki/Code_smell) است.
 
 2-آنها اصل مسئولیت واحد [single responsibility principle](#single-responsibility-principle-srp) را نقض می کنند:**به این دلیل که آنها کنترل ایجاد و چرخه زندگی خود را کنترل می کنند.**
