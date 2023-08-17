@@ -1661,10 +1661,9 @@ Console.WriteLine(employee.Name); // Employee name: John Doe
 ## کلاس ها
 
 <details>
-  <summary><b>Use method chaining</b></summary>
+  <summary><b>استفاده از زنجیره متدها Use method chaining </b></summary>
 
-This pattern is very useful and commonly used in many libraries. It allows your code to be expressive, and less verbose.
-For that reason, use method chaining and take a look at how clean your code will be.
+این الگوی بسیار مفید است و معمولاً در بسیاری از کتابخانه ها مورد استفاده قرار می گیرد.این اجازه می دهد تا کد شما واضح تر ، و واژگان کمتری داشته باشد.به همین دلیل ، از روش زنجیره ای استفاده کنید و نگاهی بیندازید که کد شما چقدر تمیز خواهد بود.
 
 **خوب:**
 
@@ -1725,19 +1724,17 @@ internal static void ListFluentExtensions()
 </details>
 
 <details>
-  <summary><b>Prefer composition over inheritance</b></summary>
+  <summary><b>ترجیح دادن ترکیب بجای وراثت Prefer composition over inheritance</b></summary>
 
-As stated famously in [_Design Patterns_](https://en.wikipedia.org/wiki/Design_Patterns) by the Gang of Four,
-you should prefer composition over inheritance where you can. There are lots of good reasons to use inheritance and lots of good reasons to use composition.
+همانطور که معروف است در الگوهای طراحی[_Design Patterns_](https://en.wikipedia.org/wiki/Design_Patterns) Design Patterns توسط Gang of Four ، شما ترکیب را بر وراثت تا جایی که می توانید ترجیح دهید.دلایل خوب زیادی برای استفاده از وراثت و دلایل خوب زیادی برای استفاده از ترکیب وجود دارد.
 
-The main point for this maxim is that if your mind instinctively goes for inheritance, try to think if composition could model your problem better. In some cases it can.
+نکته اصلی حداکثر این است که اگر ذهن شما به طور غریزی به سمت ارث بری می رود ، سعی کنید فکر کنید که آیا ترکیب می تواند مشکل شما را بهتر مدل کند. در بعضی موارد می تواند.
 
-You might be wondering then, "when should I use inheritance?" It
-depends on your problem at hand, but this is a decent list of when inheritance makes more sense than composition:
+ممکن است تعجب کنید ،"چه موقع باید از ارث بری استفاده کنم؟"بستگی به مشکل شما دارد ،اما این یک لیست مناسب در زمانی است که ارث بری از ترکیب بیشتر معنی می دهد:
 
-1. Your inheritance represents an "is-a" relationship and not a "has-a" relationship (Human->Animal vs. User->UserDetails).
-2. You can reuse code from the base classes (Humans can move like all animals).
-3. You want to make global changes to derived classes by changing a base class (Change the caloric expenditure of all animals when they move).
+1-وراث شما نمایانگر یک رابطه "is-a" (هست یک)است و نه یک رابطه "has-a" (دارد یک) (انسان->حیوان در مقابل کاربر->اطلاعات کاربر) (Human->Animal درمقابل User->UserDetails).
+2-می توانید از کد کلاس های پایه (base classes) استفاده مجدد کنید (انسانها مانند همه حیوانات می توانند حرکت کنند).
+3-شما می خواهید با تغییر یک کلاس پایه ، تغییرات global در کلاسهای مشتق شده ایجاد کنید(هزینه کالری همه حیوانات را هنگام حرکت تغییر دهید).
 
  **بد:**
 
