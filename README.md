@@ -2455,20 +2455,17 @@ public List<EmployeeData> ShowList(Employee employees)
 ## تستهای واحد
 
 <details>
-  <summary><b>Basic concept of testing</b></summary>
+  <summary><b>مفهوم پایه آزمایش کردن Basic concept of testing</b></summary>
+آزمایش کردن از ارسال کد اهمیت بیشتری دارد.اگر بدون test یا test های ناکافی دارید ،بعد از هر بار که کد ارسال می کنید مطمئن نیستید که هیچ چیزی را شکستید.تصمیم گیری در مورد مقدار کافی به تیم شما بستگی دارد ،اما داشتن 100٪ پوشش (همه بخش ها و شاخه ها) به این صورت است که اعتماد به شما نفس بسیار بالا و ایجاد آرامش ذهنی توسعه دهند می کند.این بدان معنی است که علاوه بر داشتن یک چارچوب تست عالی ،شما همچنین باید از یک ابزار پوشش مناسب استفاده کنید [good coverage tool](https://docs.microsoft.com/en-us/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested).
 
-Testing is more important than shipping. If you have no tests or an
-inadequate amount, then every time you ship code you won't be sure that you didn't break anything. Deciding on what constitutes an adequate amount is up to your team, but having 100% coverage (all statements and branches) is how you achieve very high confidence and developer peace of mind. This means that in addition to having a great testing framework, you also need to use a [good coverage tool](https://docs.microsoft.com/en-us/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested).
+بهانه ای برای نوشتن test وجود ندارد.[pچهارچوب های تست خوب زیادی برای دات نت وجود دارد(https://github.com/thangchung/awesome-dotnet-core#testing) ،بنابراین یکی از آنها را که تیم شما ترجیح دهد پیدا کنید.وقتی کسی را پیدا کردید که برای تیم شما کار کند ،بعد هدف خود را برای همیشه به نوشتن تست برای هر ویژگی/ماژول جدیدی که معرفی می کنید ، قرار دهید.اگر روش مورد نظر شما Test Driven Development (TDD) است ،عالی است،اما نکته اصلی این است که فقط مطمئن شوید که قبل از راه اندازی هر ویژگی یا اصلاح ویژگی های موجود ، به اهداف تحت پوشش خود رسیده اید.
 
-There's no excuse to not write tests. There's [plenty of good .NET test frameworks](https://github.com/thangchung/awesome-dotnet-core#testing), so find one that your team prefers. When you find one that works for your team, then aim to always write tests for every new feature/module you introduce. If your preferred method is Test Driven Development (TDD), that is great, but the main point is to just make sure you are reaching your coverage goals before launching any feature, or refactoring an existing one.
 
 </details>
 
 <details>
-  <summary><b>Single concept per test</b></summary>
-
-Ensures that your tests are laser focused and not testing miscellaenous (non-related) things, forces [AAA patern](http://wiki.c2.com/?ArrangeActAssert) used to make your codes more clean and readable.
-
+  <summary><b>مفهوم هر آزمون Single concept per test</b></summary>
+اطمینان حاصل کند که آزمایشات شما با لیزر متمرکز است و موارد غیرمستقیم (غیر مرتبط) را آزمایش نمی کند ،استفاده از [AAA patern](http://wiki.c2.com/?ArrangeActAssert) برای تمیز تر و خوانا کردن کدها شما را مجبور می کند.
  **بد:**
 
 ```csharp
