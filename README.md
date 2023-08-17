@@ -35,6 +35,14 @@
 
 ![Humorous image of software quality estimation as a count of how many expletives you shout when reading code](http://www.osnews.com/images/comics/wtfm.jpg)
 
+
+<div align="center">
+  <kbd>
+    <img src="http://www.osnews.com/images/comics/wtfm.jpg" alt="WTFM Comic">
+  </kbd>
+</div>
+
+
 اصول مهندسی نرم افزار, از کتاب  [_Clean Code_](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882) رابرت سی مارتین اقتباس و سازگار شده برای .NET/.NET Core. این اصول یک سبک برنامه نویسی نیست. این یک راهنما برای تولید کد هایی با قابلیت خواندن مجدد، استفاده مجدد و قابلیت باز سازی در  .NET/.NET Core است.
 
 لزومی نداره همه این اصول به طور دقیق رعایت بشن، حتی تعداد کمی از اون‌ها مورد توافق جهانی قرار می‌گیرن. این اصول صرفا تعدادی دستورالعمل هستند و نه بیشتر، اما این دستورالعمل‌ها طی سال‌ها تجربه جمعی، توسط نویسندگان Clean Code تدوین شدن.
