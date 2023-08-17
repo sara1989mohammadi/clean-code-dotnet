@@ -2356,17 +2356,19 @@ public class Manager
 </details>
 
 <details>
-  <summary><b>Don’t repeat yourself (DRY)</b></summary>
-
+  <summary><b>خود را تکرار نکنید Don’t repeat yourself(DRY)</b></summary>
+**
 Try to observe the [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) principle.
+سعی کنید اصل (https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) را رعایت کنید.**
 
-Do your absolute best to avoid duplicate code. Duplicate code is bad because it means that there's more than one place to alter something if you need to change some logic.
 
-Imagine if you run a restaurant and you keep track of your inventory: all your tomatoes, onions, garlic, spices, etc. If you have multiple lists that you keep this on, then all have to be updated when you serve a dish with tomatoes in them. If you only have one list, there's only one place to update!
+تمام تلاش خود را بکنید تا از کپی کردن کد جلوگیری کنید.کپی تکراری بد است زیرا به این معنی است که در صورت نیاز به تغییر بخشی از منطق ، بیش از یک مکان برای تغییر چیزی وجود دارد.
 
-Oftentimes you have duplicate code because you have two or more slightly different things, that share a lot in common, but their differences force you to have two or more separate functions that do much of the same things. Removing duplicate code means creating an abstraction that can handle this set of different things with just one function/module/class.
+تصور کنید اگر رستوران اداره می کنید و موجودی خود را پیگیری می کنید: تمام گوجه فرنگی ، پیاز ، سیر ، ادویه جات، ترشی جات و غیره.اگر چندین لیست دارید که این کار را روی آنها انجام می دهید ، باید وقتی که یک ظرف را با گوجه فرنگی سرو می کنید ، همه آنها را به روز کنید.اگر فقط یک لیست دارید ، فقط یک مکان برای به روزرسانی وجود دارد!
 
-Getting the abstraction right is critical, that's why you should follow the SOLID principles laid out in the [Classes](#classes) section. Bad abstractions can be worse than duplicate code, so be careful! Having said this, if you can make a good abstraction, do it! Don't repeat yourself, otherwise you'll find yourself updating multiple places anytime you want to change one thing.
+بیشتر اوقات شما کد تکراری دارید زیرا شما دو یا چند مورد کمی متفاوت دارید ،که کد های مشترک زیادی دارند ،اما تفاوتهای آنها شما را مجبور به داشتن دو یا چند توابع/متد مجزا می کند که بیشتر کارهای مشابه را انجام می دهند.حذف کد تکراری به معنای ایجاد انتزاعی(abstraction) است که می تواند تنها با یک تابع/ماژول/کلاس ، این مجموعه موارد مختلف را کنترل کند.
+
+**گرفتن حق انتزاع بسیار مهم است ،به همین دلیل باید از اصول SOLID که در بخش کلاس ها [Classes](#classes) ارائه شده است پیروی کنید.انتزاع بد می تواند بدتر از کد تکراری باشد ،خیلی مراقب باشید!با گفتن این حرف ، اگر می توانید انتزاع خوبی ایجاد کنید ، این کار را انجام دهید!خود را تکرار نکنید ،در غیر این صورت خودتان را در هر زمان که می خواهید یک چیز را تغییر دهید ، به روز می کنید.**
 
  **بد:**
 
