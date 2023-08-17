@@ -1819,8 +1819,8 @@ class Employee
 
 <details>
   <summary><b>سالید چیست؟</b></summary>
-**سالید** مخفف یادگاری است که توسط Michael Feathers برای پنج اصل اول نامگذاری شده توسط رابرت مارتین معرفی شده است که به معنای پنج اصل اساسی برنامه نویسی و طراحی شی گرا است
-  
+
+  کلمه SOLID مخفف که توسط Michael Feathers ساخته بر اساس اول حرف پنج اصل Robert Martin معرفی شده است ، که به معنای پنج اصل اساسی برنامه نویسی و طراحی شی گرا است.
 
 - [S: Single Responsibility Principle (SRP)](#single-responsibility-principle-srp)
 - [O: Open/Closed Principle (OCP)](#openclosed-principle-ocp)
