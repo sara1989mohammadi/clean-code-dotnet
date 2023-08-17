@@ -1039,7 +1039,7 @@ var configuration = new Configuration(new Dictionary<string, string>() {
 <details>
   <summary><b>عدم استفاده از الگوی سینگلتون Don't use a Singleton pattern</b></summary>
 
-الگوی Singleton یک ضد الگوی است[anti-pattern](https://en.wikipedia.org/wiki/Singleton_pattern).تفسیر از Brian Button:
+الگوی Singleton یک  [ضد الگوی](https://en.wikipedia.org/wiki/Singleton_pattern)است.تفسیر از Brian Button:
 
 1-آنها به عنوان یک **global instance** مورد استفاده قرار می گیرند ،چرا اینقدر بد است؟از آنجا که **وابستگی برنامه** را در **کد پنهان** می کنید ،به جای نمایش آنها از طریق interface ها. ایجاد چیزی global برای جلوگیری از عبور آن در اطراف بوی کد[code smell](https://en.wikipedia.org/wiki/Code_smell) است.
 
