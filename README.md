@@ -4,7 +4,8 @@
 <div align="center">
   <h1><strong>مفاهیم کد تمیز در .NET/.NET Core</strong></h1>
 </div>
-**مفاهیم کد تمیز در .NET/.NET Core**
+
+
  # فهرست محتوا
 
 - [مقدمه](#مقدمه)
