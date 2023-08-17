@@ -2551,9 +2551,9 @@ public class MakeDotNetGreatAgainTests
 ## همروندی
 
 <details>
-  <summary><b>Use Async/Await</b></summary>
+  <summary><b>استفاده از Async/Await</b></summary>
 
-**Summary of Asynchronous Programming Guidelines**
+**خلاصه دستورالعمل های برنامه نویسی غیرهمزمان**
 
 | Name              | Description                                       | Exceptions                      |
 | ----------------- | ------------------------------------------------- | ------------------------------- |
@@ -2561,7 +2561,7 @@ public class MakeDotNetGreatAgainTests
 | Async all the way | Don't mix blocking and async code                 | Console main method (C# <= 7.0) |
 | Configure context | Use `ConfigureAwait(false)` when you can          | Methods that require con­text   |
 
-**The Async Way of Doing Things**
+**(غیرهمزمان) Async راه انجام کارها**
 
 | To Do This ...                           | Instead of This ...        | Use This             |
 | ---------------------------------------- | -------------------------- | -------------------- |
@@ -2572,15 +2572,15 @@ public class MakeDotNetGreatAgainTests
 
 **Best practice**
 
-The async/await is the best for IO bound tasks (networking communication, database communication, http request, etc.) but it is not good to apply on computational bound tasks (traverse on the huge list, render a hugge image, etc.). Because it will release the holding thread to the thread pool and CPU/cores available will not involve to process those tasks. Therefore, we should avoid using Async/Await for computional bound tasks.
+کلمات کلیدی async/await برای کارهای مرتبط با IO bound tasks (ارتباطات شبکه ای ، ارتباط بانک اطلاعاتی ، درخواست http ، و غیره) است. اما استفاده برای کارهای مرتبط computational bound tasks (چرخش از لیست عظیم ، پردازش تصاویر بزرگ و غیره) مناسب نسیت. زیرا thread نگهدارنده را به قسمت thread pool منتقل می کند و CPU/cores های موجود برای پردازش آن کارها(tasks) دخالتی ندارند.بنابراین ، ما باید از استفاده از Async/Await برای کارهای محاسباتی (computional bound tasks) خودداری کنیم.
 
-For dealing with computational bound tasks, prefer to use `Task.Factory.CreateNew` with `TaskCreationOptions` is `LongRunning`. It will start a new background thread to process a heavy computational bound task without release it back to the thread pool until the task being completed.
+برای رسیدگی به کارهای محاسباتی (computational bound tasks)،ترجیح می دهید از Task.Factory.CreateNew با TaskCreationOptions که LongRunning است ،استفاده کنید.این یک thread پس زمینه جدید را برای پردازش یک کار محدود محاسباتی سنگین و بدون رها کردن آن بهthread pool شروع می کند تا اینکه کار انجام شود.
 
-**Know Your Tools**
+**ابزار های خودت را بشناس**
 
-There's a lot to learn about async and await, and it's natural to get a little disoriented. Here's a quick reference of solutions to common problems.
+چیزهای زیادی برای آموختن در مورد async و await وجود دارد و طبیعی است که کمی از منحرف شوید.در اینجا سریع به راه حل های مربوط به مشکلات رایج اشاره می شود.
 
-**Solutions to Common Async Problems**
+**راه حل هایی برای مشکلات مشترک Async**
 
 | Problem                                         | Solution                                                                          |
 | ----------------------------------------------- | --------------------------------------------------------------------------------- |
@@ -2596,7 +2596,10 @@ There's a lot to learn about async and await, and it's natural to get a little d
 Read the [Task-based Asynchronous Pattern (TAP) document](http://www.microsoft.com/download/en/details.aspx?id=19957).
 It is extremely well-written, and includes guidance on API design and the proper use of async/await (including cancellation and progress reporting).
 
-There are many new await-friendly techniques that should be used instead of the old blocking techniques. If you have any of these Old examples in your new async code, you're Doing It Wrong(TM):
+
+سند [Task-based Asynchronous Pattern (TAP) document](http://www.microsoft.com/download/en/details.aspx?id=19957) را بخوانید.بسیار خوب نوشته شده است ،و شامل راهنمایی در مورد طراحی API و استفاده صحیح از async / await (از جمله لغو و گزارش پیشرفت).
+
+بسیاری از تکنیک های جدید منتظر await وجود دارد که باید به جای تکنیک های قدیمی مورد استفاده قرار گیرند.اگر در کد async جدید خود هر یک از این مثال های قدیمی را دارید ، این کار را اشتباه انجام می دهید (TM):
 
 | Old                | New                                  | Description                                                   |
 | ------------------ | ------------------------------------ | ------------------------------------------------------------- |
