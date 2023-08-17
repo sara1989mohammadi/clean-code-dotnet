@@ -1822,16 +1822,16 @@ class Employee
 
   کلمه SOLID مخفف که توسط Michael Feathers ساخته بر اساس اول حرف پنج اصل Robert Martin معرفی شده است ، که به معنای پنج اصل اساسی برنامه نویسی و طراحی شی گرا است.
 
-- [S: Single Responsibility Principle (SRP)](#single-responsibility-principle-srp)
-- [O: Open/Closed Principle (OCP)](#openclosed-principle-ocp)
-- [L: Liskov Substitution Principle (LSP)](#liskov-substitution-principle-lsp)
-- [I: Interface Segregation Principle (ISP)](#interface-segregation-principle-isp)
-- [D: Dependency Inversion Principle (DIP)](#dependency-inversion-principle-dip)
+- [**S**: Single Responsibility Principle (SRP)](#single-responsibility-principle-srp)
+- [**O**: Open/Closed Principle (OCP)](#openclosed-principle-ocp)
+- [**L**: Liskov Substitution Principle (LSP)](#liskov-substitution-principle-lsp)
+- [**I**: Interface Segregation Principle (ISP)](#interface-segregation-principle-isp)
+- [**D**: Dependency Inversion Principle (DIP)](#dependency-inversion-principle-dip)
 
 </details>
 
 <details>
-  <summary><b>Single Responsibility Principle (SRP)</b></summary>
+  <summary><b>اصل تک مسئولیتی (Single Responsibility Principle) (SRP)</b></summary>
 
 As stated in Clean Code, "There should never be more than one reason for a class to change". It's tempting to jam-pack a class with a lot of functionality, like when you can only take one suitcase on your flight. The issue with this is that your class won't be conceptually cohesive and it will give it many reasons to change. Minimizing the amount of times you need to change a class is important.
 
