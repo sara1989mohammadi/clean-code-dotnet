@@ -62,8 +62,8 @@
 
 ## نام گذاری
 
-<details align="right">
-  <summary ><b>از نوشتن نام بد خودداری کنید</b></summary>
+<details >
+  <summary align="right"><b>از نوشتن نام بد خودداری کنید</b></summary>
 یک نام خوب اجازه میدهد توسط تعداد زیادی از برنامه نویسان استفاده شود. نام باید نشان دهنده کار و مورد استفاده آن باشد.
 
 **بد:**
@@ -83,7 +83,7 @@ int daySinceModification;
 </details>
 
 <details>
-  <summary><b>از نوشتن نام های گمراه کننده خودداری کنید</b></summary>
+  <summary align="right"><b>از نوشتن نام های گمراه کننده خودداری کنید</b></summary>
 
 نام متغیر باید نشان دهد برای چه چیزی استفاده میشود.
 
@@ -103,7 +103,7 @@ var listOfEmployee = _employeeService.GetEmployees().ToList();
 </details>
 
 <details>
-  <summary><b>از نشان گذاری مجارستانی خود داری کنید</b></summary>
+  <summary align="right"><b>از نشان گذاری مجارستانی خود داری کنید</b></summary>
 
 نشان گذاری مجارستانی نوع متغییر را در نام آن اعلام میکند. این کار بیهوده است چون محیط های توسعه مدرن (IDEs) نوع را شناسایی و نمایش میدهند.
 
@@ -148,7 +148,7 @@ public bool IsShopOpen(string day, int amount)
 </details>
 
 <details>
-  <summary><b>از حروف بزرگ استفاده کنید</b></summary>
+  <summary align="right"><b>از حروف بزرگ استفاده کنید</b></summary>
 
 حروف بزرگ اطلاعات زیادی در رابطه با متغیر، توابع و ... به شما میدهند. این قوانین ذهنی هستند و تیم شما میتواند هر کدام را انتخاب کند. نکته مهم این است مهم نیست که کدام را انتخاب میکنید فقط در انتخاب خود ثابت قدم باشید.
 
@@ -189,7 +189,7 @@ class Alpaca {}
 </details>
 
 <details>
-  <summary><b>از نام های قابل تلفظ استفاده کنید</b></summary>
+  <summary align="right"><b>از نام های قابل تلفظ استفاده کنید</b></summary>
 
 تحقیق در رابطه با متغیر ها و توابعی که نام آنها قابل تلفظ نیست میتواند زمان بر باشد.
 
@@ -218,7 +218,7 @@ public class Employee
 </details>
 
 <details>
-  <summary><b>از نشانه گذاری Camelcase استفاده کنید</b></summary>
+  <summary align="right"><b>از نشانه گذاری Camelcase استفاده کنید</b></summary>
 
 از نشانه گذاری [Camelcase Notation](https://en.wikipedia.org/wiki/Camel_case) برای متغیر و توابع استفاده کنید.
 
@@ -249,7 +249,7 @@ public double CalculateSalary(int workingDays, int workingHours)
 </details>
 
 <details>
-  <summary><b>از نام دامنه استفاده کنید</b></summary>
+  <summary align="right"><b>از نام دامنه استفاده کنید</b></summary>
 
 کسانی که کد شما را میخوانند مانند شما برنامه نویس هستند. نام گذاری درست به همه کمک میکند که در رابطه با یک موضوع فکر کنند. ما نمیخواهیم زمان برای توضیح دادن در رابطه با متغیر و توابع خود بگذاریم.
 
@@ -297,7 +297,7 @@ public static void main(String[] args)
 ## متغیرها
 
 <details>
-  <summary><b>از دندانه کردن عمیق و بازگشت سریع خودداری کنید</b></summary>
+  <summary align="right"><b>از دندانه کردن عمیق و بازگشت سریع خودداری کنید</b></summary>
 
 استفاده بیش از حد از if/esle میتواند خوانایی و دنبال کردن کد را سخت کند. **صریح بهتر از ضمنی است**.
 
@@ -408,7 +408,7 @@ public long Fibonacci(int n)
 </details>
 
 <details>
-  <summary><b>از نام گذاری ذهنی خودداری کنید</b></summary>
+  <summary align="right"><b>از نام گذاری ذهنی خودداری کنید</b></summary>
 
 خواننده کد را مجبور نکنید که نیاز به ترجمه نام متغیر داشته باشد که این متغییر به چه معناست. **صریح بهتر از ضمنی است**.
 
@@ -453,7 +453,7 @@ foreach (var location in locations)
 </details>
 
 <details>
-  <summary><b>از رشته های جادویی خودداری کنید</b></summary>
+  <summary align="right"><b>از رشته های جادویی خودداری کنید</b></summary>
 
 رشته های جادویی، رشته هایی هستند که در مستقیم در کد قرار دارند و روی رفتار اپلیکیشن ما تاثیر مستقیم دارند. چنین رشته های چندین بار در کد ما تکرار میشوند, و چون نمیتوانند به صورت اتوماتیک توسط ابزار تغییر کنند, آنها به منبع خطا ایجاد میشوند زمانی که تغییراتی در برخی از رشته ها ایجاد میشود.
 
@@ -483,7 +483,7 @@ if (userRole == ADMIN_ROLE)
 </details>
 
 <details>
-  <summary><b>محتوای غیر ضروری را اضافه نکنید</b></summary>
+  <summary align="right"><b>محتوای غیر ضروری را اضافه نکنید</b></summary>
 
 اگر نام object/class شما نشان دهنده چیزی است اون رو در اسم متغییر هاتون اضافه نکنید.
 
@@ -518,7 +518,7 @@ public class Car
 </details>
 
 <details>
-  <summary><b>از نام متغییر معنی دار و قابل تلفظ استفاده کنید</b></summary>
+  <summary align="right"><b>از نام متغییر معنی دار و قابل تلفظ استفاده کنید</b></summary>
 
  **بد:**
 
@@ -537,7 +537,7 @@ var currentDate = DateTime.UtcNow.ToString("MMMM dd, yyyy");
 </details>
 
 <details>
-  <summary><b>از کلمات یکسان برای تایپ های یکسان استفاده کنید</b></summary>
+  <summary align="right"><b>از کلمات یکسان برای تایپ های یکسان استفاده کنید</b></summary>
 
  **بد:**
 
@@ -559,7 +559,7 @@ GetUser();
 </details>
 
 <details>
-  <summary><b>از نام های قابل جستجو استفاده کنید (پارت 1)</b></summary>
+  <summary align="right"><b>از نام های قابل جستجو استفاده کنید (پارت 1)</b></summary>
 
 ما بیشتر از آنچه کد بنویسیم کد ها را میخوانیم. این خیلی مهم است کدی که مینویسیم قابلیت **خواندن و جستجو کردن** را داشته باشد. با نامگذاری نکردن از متغیرهایی که در نهایت برای درک برنامه ما معنادار هستند، به خوانندگان خود صدمه می زنیم. نام خود را قابل جستجو کنید. از نام های قابل جستجو استفاده کنید.
 
@@ -603,7 +603,7 @@ Console.WriteLine(sr2.ReadToEnd());
 </details>
 
 <details>
-  <summary><b>از نام های قابل جستجو استفاده کنید (پارت 2)</b></summary>
+  <summary align="right"><b>از نام های قابل جستجو استفاده کنید (پارت 2)</b></summary>
 
  **بد:**
 
@@ -646,7 +646,7 @@ if (person.PersonAccess == PersonAccess.ACCESS_UPDATE)
 </details>
 
 <details>
-  <summary><b>از متغیرهای توضیحی استفاده کنید</b></summary>
+  <summary align="right"><b>از متغیرهای توضیحی استفاده کنید</b></summary>
 
  **بد:**
 
@@ -681,7 +681,7 @@ if(cityGroup.Success == true && zipCodeGroup.Success == true)
 </details>
 
 <details>
-  <summary><b>به جای شرط های تک خطی از آرگومان های پیشفرض استفاده کنید</b></summary>
+  <summary align="right"><b>به جای شرط های تک خطی از آرگومان های پیشفرض استفاده کنید</b></summary>
 
 **Not good:**
 
@@ -713,7 +713,7 @@ public void CreateMicrobrewery(string breweryName = "Hipster Brew Co.")
 ## توابع
 
 <details>
-  <summary><b>از عوارض جانبی خودداری کنید</b></summary>
+  <summary align="right"><b>از عوارض جانبی خودداری کنید</b></summary>
 
 یک تابع باعث ایجاد عوارض جانبی میشود اگر کاری بیشتر از دریافت یک ورودی و بازگشت یک یا چند مقدار انجام دهد. این اثر جانبی میتونه نوشتن در یک فایل، تغییر متغییر های سراسری (global) و یا انتقال پول از حساب شما به حساب شخص دیگر باشد.
 
@@ -760,7 +760,7 @@ Console.WriteLine(fullName); // His first name is Ryan, and his last name is McD
 </details>
 
 <details>
-  <summary><b>از شروط منفی خودداری کنید</b></summary>
+  <summary align="right"><b>از شروط منفی خودداری کنید</b></summary>
 
  **بد:**
 
@@ -795,7 +795,7 @@ if (IsDOMNodePresent(node))
 </details>
 
 <details>
-  <summary><b>از شرط ها خودداری کنید</b></summary>
+  <summary align="right"><b>از شرط ها خودداری کنید</b></summary>
 
 ممکن است این کار غیر ممکن بنظر برسد. اکثر مردم برای اولین بار این حرف را میشنوند میگویند, "**چگونه میتوانم هر کاری را بدون دستور `if` انجام دهم؟**" جواب این است که شما میتوانید با استفاده از چندریختی (polymorphism) در بسیاری از موارد به همان نتیجه برسید. معمولا دومین سوال این است, "خب این عالیه ولی چرا من باید بخواهم که این کار را انجام دهم؟" جواب مفهوم قبلی کلین کد است که یاد گرفتیم: تابع باید یک کار انجام دهم. زمانی که ما یک کلاس یا تابه داریم که دارای دستور `if` است, شما به کاربر خود میگوید که تابع شما بیشتر از یک کار انجام میدهد. به یاد داشته باشید فقط یک کار انجام دهم.
 
@@ -867,7 +867,7 @@ class Cessna : IAirplane
 </details>
 
 <details>
-  <summary><b>از چک کردن نوع خودداری کنید (پارت 1)</b></summary>
+  <summary align="right"><b>از چک کردن نوع خودداری کنید (پارت 1)</b></summary>
 
  **بد:**
 
@@ -916,7 +916,7 @@ public Path TravelToTexas(object vehicle)
 </details>
 
 <details>
-  <summary><b>از چک کردن نوع خودداری کنید (پارت 2)</b></summary>
+  <summary align="right"><b>از چک کردن نوع خودداری کنید (پارت 2)</b></summary>
 
  **بد:**
 
@@ -947,7 +947,7 @@ public int Combine(int val1, int val2)
 </details>
 
 <details>
-  <summary><b>از استفاده از ورودی های تابع به عنوان flag خودداری کنید</b></summary>
+  <summary align="right"><b>از استفاده از ورودی های تابع به عنوان flag خودداری کنید</b></summary>
 
 یک flag نشان میدهد که تابع بیش از یک مسئولیت دارد. این خوب است که متد فقط یک وظیفه داشته باشد. اگر شرط باعث میشود که تابع چند مسئولیت داشته باشد آن را به توابع م
 کوچکتر بشکنید.
@@ -987,7 +987,7 @@ public void CreateTempFile(string name)
 </details>
 
 <details>
-  <summary><b>روی تابع های سراسری(global) چیزی ننویسید</b></summary>
+  <summary align="right"><b>روی تابع های سراسری(global) چیزی ننویسید</b></summary>
 
 تغییر دادن مقادیر سراسری در بسیاری از زبان ها عمل بدی  است چون ممکنه با کتابخانه‌های دیگه تداخل ایجاد کند و کاربری که از API شما استفاده میکند، تا وقتی به خطایی برنخورد، متوجه اون نخواهد شد. بیاید یک مثال را ببینیم: چه میشود اگر شما بخواهید یک آرایه از تنظیمات داشته باشید.
 میتوانید یک تابع با عنوان `Config()` بنویسید, اما این ممکن است با یک کتابخانه دیگر که تلاش میکند کار یکسانی انجام دهد تداخل داشته باشد.
@@ -1037,7 +1037,7 @@ var configuration = new Configuration(new Dictionary<string, string>() {
 </details>
 
 <details>
-  <summary><b>عدم استفاده از الگوی سینگلتون Don't use a Singleton pattern</b></summary>
+  <summary align="right"><b>عدم استفاده از الگوی سینگلتون Don't use a Singleton pattern</b></summary>
 
 الگوی Singleton یک  [ضد الگوی](https://en.wikipedia.org/wiki/Singleton_pattern) است.تفسیر از Brian Button:
 
@@ -1107,7 +1107,7 @@ var connection = new DBConnection(options);
 </details>
 
 <details>
-  <summary><b>آرگومان های تابع(دو یا کمتر ایده آل است) Function arguments (2 or fewer ideally)</b></summary>
+  <summary align="right"><b>آرگومان های تابع(دو یا کمتر ایده آل است) Function arguments (2 or fewer ideally)</b></summary>
 
 محدود کردن مقدار پارامترهای تابع یا متد فوق العاده مهم است زیرا test متد شما را آسان تر می کند.داشتن بیش از سه مورد منجر به یک انفجار ترکیبی می شود که در آن باید موارد مختلفی را با هر آرگومان جداگانه test کنید.
 
@@ -1152,7 +1152,7 @@ public void CreateMenu(MenuConfig config)
 </details>
 
 <details>
-  <summary><b>توابع باید یک کار را انجام دهند Functions should do one thing</b></summary>
+  <summary align="right"><b>توابع باید یک کار را انجام دهند Functions should do one thing</b></summary>
 
 این مهمترین قانون در مهندسی نرم افزار است.وقتی متدها بیش از یک کار را انجام دهند ، **نوشتن ، آزمایش و استدلال** در مورد آنها سخت تر است.هنگامی که می توانید یک عملکرد را تنها با یک عمل جدا کنید ، می توان آنها را به راحتی refactored کرد و کد شما بسیار تمیز تر خوانده می شود.اگر این راهنما را رعایت کنید، شما از بسیاری از توسعه دهندگان جلوتر خواهید بود.
 
@@ -1192,7 +1192,7 @@ public List<Client> GetActiveClients(string[] clients)
 </details>
 
 <details>
-  <summary><b>اسامی تابع باید آنچه را انجام می دهند بگویند Function names should say what they do</b></summary>
+  <summary align="right"><b>اسامی تابع باید آنچه را انجام می دهند بگویند Function names should say what they do</b></summary>
 
  **بد:**
 
@@ -1235,7 +1235,7 @@ message.Send();
 </details>
 
 <details>
-  <summary><b>توابع فقط باید یک سطح انتزاع داشته باشند Functions should only be one level of abstraction</b></summary>
+  <summary align="right"><b>توابع فقط باید یک سطح انتزاع داشته باشند Functions should only be one level of abstraction</b></summary>
 
 > هنوز تمام نشده
 
@@ -1390,7 +1390,7 @@ class BetterJSAlternative
 </details>
 
 <details>
-  <summary><b>تابع صدا زننده و توابع فراخوانی شده باید نزدیک هم باشند Function callers and called should be close</b></summary>
+  <summary align="right"><b>تابع صدا زننده و توابع فراخوانی شده باید نزدیک هم باشند Function callers and called should be close</b></summary>
 
 اگر یک تابع، تابع دیگری را صدا می کند ، آن توابع را به صورت عمودی در فایل منبع نگه دارید.
 
@@ -1502,7 +1502,7 @@ review.PerfReview();
 </details>
 
 <details>
-  <summary><b>کپسوله کردن شرط ها Encapsulate conditionals</b></summary>
+  <summary align="right"><b>کپسوله کردن شرط ها Encapsulate conditionals</b></summary>
 
  **بد:**
 
@@ -1527,7 +1527,7 @@ if (article.IsPublished())
 </details>
 
 <details>
-  <summary><b>حذف کدهای مرده Remove dead code</b></summary>
+  <summary align="right"><b>حذف کدهای مرده Remove dead code</b></summary>
 
 **کد مرده** به همان اندازه **کد تکراری** بد است.هیچ دلیلی برای نگه داشتن آن در codebase شما وجود ندارد.اگر آن را صدا نمیزنید ، از شر آن خلاص شوید!
 اگر هنوز به آن نیاز دارید ، در **version history** شما ایمن خواهد بود.
@@ -1568,7 +1568,7 @@ InventoryTracker("apples", request, "www.inventory-awesome.io");
 ## اشیاوساختاردادهها
 
 <details>
-  <summary><b>استفاده از گتر و ستر Use getters and setters</b></summary>
+  <summary align="right"><b>استفاده از گتر و ستر Use getters and setters</b></summary>
 
 در C # / VB.NET می توانید کلمات کلیدی **public ، protected و private** را برای متدها تنظیم کنید.با استفاده از آن ، می توانید modification پراپرتی ها در یک شی را کنترل کنید.
 
@@ -1644,7 +1644,7 @@ balance = bankAccount.Balance;
 </details>
 
 <details>
-  <summary><b>ایجاد اشیایی که را دارای اعضای خصوصی / محافظت هستند Make objects have private/protected members</b></summary>
+  <summary align="right"><b>ایجاد اشیایی که را دارای اعضای خصوصی / محافظت هستند Make objects have private/protected members</b></summary>
 
  **بد:**
 
@@ -1687,7 +1687,7 @@ Console.WriteLine(employee.Name); // Employee name: John Doe
 ## کلاس ها
 
 <details>
-  <summary><b>استفاده از زنجیره متدها Use method chaining </b></summary>
+  <summary align="right"><b>استفاده از زنجیره متدها Use method chaining </b></summary>
 
 این الگوی بسیار مفید است و معمولاً در بسیاری از کتابخانه ها مورد استفاده قرار می گیرد.این اجازه می دهد تا کد شما واضح تر ، و واژگان کمتری داشته باشد.به همین دلیل ، از روش زنجیره ای استفاده کنید و نگاهی بیندازید که کد شما چقدر تمیز خواهد بود.
 
@@ -1750,7 +1750,7 @@ internal static void ListFluentExtensions()
 </details>
 
 <details>
-  <summary><b>ترجیح دادن ترکیب بجای وراثت Prefer composition over inheritance</b></summary>
+  <summary align="right"><b>ترجیح دادن ترکیب بجای وراثت Prefer composition over inheritance</b></summary>
 
 همانطور که معروف است در [الگوهای طراحی](https://en.wikipedia.org/wiki/Design_Patterns) Design Patterns توسط Gang of Four ، شما ترکیب را بر وراثت تا جایی که می توانید ترجیح دهید.دلایل خوب زیادی برای استفاده از وراثت و دلایل خوب زیادی برای استفاده از ترکیب وجود دارد.
 
@@ -1841,7 +1841,7 @@ class Employee
 ## سالید
 
 <details>
-  <summary><b>سالید چیست؟</b></summary>
+  <summary align="right"><b>سالید چیست؟</b></summary>
 
   کلمه SOLID مخفف که توسط Michael Feathers ساخته بر اساس اول حرف پنج اصل Robert Martin معرفی شده است ، که به معنای پنج اصل اساسی برنامه نویسی و طراحی شی گرا است.
 
@@ -1854,7 +1854,7 @@ class Employee
 </details>
 
 <details>
-  <summary><b>اصل تک مسئولیتی (Single Responsibility Principle) (SRP)</b></summary>
+  <summary align="right"><b>اصل تک مسئولیتی (Single Responsibility Principle) (SRP)</b></summary>
 
 همانطور که در Clean Code بیان شده است ،"هرگز نباید بیش از یک دلیل برای تغییر کلاس وجود داشته باشد". ایجاد یک کلاس با قابلیت های زیادی وسوسه انگیز است ، مانند زمانی که فقط می توانید یک چمدان را در پرواز بگیرید.مسئله این است که کلاس شما از نظر مفهومی منسجم نخواهد بود و دلایل زیادی برای تغییر ایجاد می کند.به حداقل رساندن مقدار زمان لازم برای تغییر یک کلاس مهم است.
 
@@ -1931,7 +1931,7 @@ class UserSettings
 </details>
 
 <details>
-  <summary><b>اصل باز – بسته (Open/Closed Principle) (OCP)</b></summary>
+  <summary align="right"><b>اصل باز – بسته (Open/Closed Principle) (OCP)</b></summary>
 
 همانطور که Bertrand Meyer گفته است،"موجودیت های نرم افزاری (کلاس ها ، ماژول ها ، توابع و غیره) باید برای گسترش باز اما برای اصلاح بسته باشند.". معنی این چیست؟این اصل اساساً بیان می کند که شما باید به کاربران اجازه دهید بدون تغییر کد موجود ، ویژگی های جدیدی(functionalities) اضافه کنند.
 
@@ -2044,7 +2044,7 @@ class HttpRequester
 </details>
 
 <details>
-  <summary><b>اصل جایگزینی لیسکوف (Liskov Substitution Principle)(LSP)</b></summary>
+  <summary align="right"><b>اصل جایگزینی لیسکوف (Liskov Substitution Principle)(LSP)</b></summary>
 
 این یک اصطلاح ترسناک برای یک مفهوم بسیار ساده است.به طور رسمی اینگونه تعریف می شود "اگر S زیر مجموعه ای از T باشد ، ممکن است اشیاء از نوع T با اشیاء از نوع S جایگزین شوند (به عنوان مثال اشیاء از نوع S می توانند اشیاء نوع T را جایگزین کنند) بدون اینکه هیچ یک از خصوصیات مطلوب آن برنامه را تغییر دهند. (از نظر درستی ، انجام کار و غیره). ". حتی این یک تعریف ترسناک است.
 
@@ -2184,7 +2184,7 @@ RenderLargeRectangles(shapes);
 </details>
 
 <details>
-  <summary><b>اصل تفکیک رابط‌ها (Interface Segregation Principle) (ISP)</b></summary>
+  <summary align="right"><b>اصل تفکیک رابط‌ها (Interface Segregation Principle) (ISP)</b></summary>
 
 اصل ISP میگوید که "Client ها نباید مجبور شوند به Interface هایی که از آنها استفاده نمی کنند وابستگی داشته باشند.".
 
@@ -2273,7 +2273,7 @@ public class Robot : IWorkable
 </details>
 
 <details>
-  <summary><b>اصل وارونگی وابستگی (Dependency Inversion Principle) (DIP)</b></summary>
+  <summary align="right"><b>اصل وارونگی وابستگی (Dependency Inversion Principle) (DIP)</b></summary>
 
 این اصل دو چیز اساسی را بیان می کند:
 
@@ -2379,7 +2379,7 @@ public class Manager
 </details>
 
 <details>
-  <summary><b>خود را تکرار نکنید Don’t repeat yourself(DRY)</b></summary>
+  <summary align="right"><b>خود را تکرار نکنید Don’t repeat yourself(DRY)</b></summary>
 **
 Try to observe the [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) principle.
 
@@ -2481,7 +2481,7 @@ public List<EmployeeData> ShowList(Employee employees)
 ## تستهای واحد
 
 <details>
-  <summary><b>مفهوم پایه آزمایش کردن Basic concept of testing</b></summary>
+  <summary align="right"><b>مفهوم پایه آزمایش کردن Basic concept of testing</b></summary>
 آزمایش کردن از ارسال کد اهمیت بیشتری دارد.اگر بدون test یا test های ناکافی دارید ،بعد از هر بار که کد ارسال می کنید مطمئن نیستید که هیچ چیزی را شکستید.تصمیم گیری در مورد مقدار کافی به تیم شما بستگی دارد ،اما داشتن 100٪ پوشش (همه بخش ها و شاخه ها) به این صورت است که اعتماد به شما نفس بسیار بالا و ایجاد آرامش ذهنی توسعه دهند می کند.این بدان معنی است که علاوه بر داشتن یک چارچوب تست عالی ،شما همچنین باید از یک ابزار پوشش مناسب استفاده کنید [good coverage tool](https://docs.microsoft.com/en-us/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested).
 
 بهانه ای برای نوشتن test وجود ندارد.[pچهارچوب های تست خوب زیادی برای دات نت وجود دارد(https://github.com/thangchung/awesome-dotnet-core#testing) ،بنابراین یکی از آنها را که تیم شما ترجیح دهد پیدا کنید.وقتی کسی را پیدا کردید که برای تیم شما کار کند ،بعد هدف خود را برای همیشه به نوشتن تست برای هر ویژگی/ماژول جدیدی که معرفی می کنید ، قرار دهید.اگر روش مورد نظر شما Test Driven Development (TDD) است ،عالی است،اما نکته اصلی این است که فقط مطمئن شوید که قبل از راه اندازی هر ویژگی یا اصلاح ویژگی های موجود ، به اهداف تحت پوشش خود رسیده اید.
@@ -2490,7 +2490,7 @@ public List<EmployeeData> ShowList(Employee employees)
 </details>
 
 <details>
-  <summary><b>مفهوم هر آزمون Single concept per test</b></summary>
+  <summary align="right"><b>مفهوم هر آزمون Single concept per test</b></summary>
 اطمینان حاصل کند که آزمایشات شما با لیزر متمرکز است و موارد غیرمستقیم (غیر مرتبط) را آزمایش نمی کند ،استفاده از [AAA patern](http://wiki.c2.com/?ArrangeActAssert) برای تمیز تر و خوانا کردن کدها شما را مجبور می کند.
  **بد:**
 
@@ -2574,7 +2574,7 @@ public class MakeDotNetGreatAgainTests
 ## همروندی
 
 <details>
-  <summary><b>استفاده از Async/Await</b></summary>
+  <summary align="right"><b>استفاده از Async/Await</b></summary>
 
 **خلاصه دستورالعمل های برنامه نویسی غیرهمزمان**
 
@@ -2642,14 +2642,14 @@ It is extremely well-written, and includes guidance on API design and the proper
 ## مدیریت خطا
 
 <details>
-  <summary><b>مفهوم پایه مدیریت خطا Basic concept of error handling</b></summary>
+  <summary align="right"><b>مفهوم پایه مدیریت خطا Basic concept of error handling</b></summary>
 
 خطاهای پرتاب شده چیز خوبی است!این بدان معناست که زمان اجرا با موفقیت تشخیص داده شده است که چیزی در برنامه شما اشتباه رخ داده است و به شما این امکان را می دهد تا با متوقف کردن اجرای عملکرد روی پشته (stack) فعلی ، این process را بکشید (در NET / .NET Core) ،و از طریق stack trace در کنسول به اطلاع شما می رساند.
 
 </details>
 
 <details>
-  <summary><b>عدم استفاده از 'throw ex' در بلوک کچ Don't use 'throw ex' in catch block</b></summary>
+  <summary align="right"><b>عدم استفاده از 'throw ex' در بلوک کچ Don't use 'throw ex' in catch block</b></summary>
 
 اگر شما نیاز به پرتاب دوباره خطا بعد از به دام انداختن ان را دارید،فقط از "throw" استفاده کنید ، با استفاده از این ، شما stack trace ذخیره می کنید.اما در گزینه بد زیر ، stack trace را از دست خواهید داد.
 
@@ -2686,7 +2686,7 @@ catch (Exception ex)
 </details>
 
 <details>
-  <summary><b>عدم نادیده گرفتن خطاهای گرفتار شده Don't ignore caught errors</b></summary>
+  <summary align="right"><b>عدم نادیده گرفتن خطاهای گرفتار شده Don't ignore caught errors</b></summary>
 
 انجام ندادن کاری با خطای گرفتار شده، همیشه امکان اصلاح یا واکنش نشان داده به خطای گفته شده را نمی دهد. پرتاب خطا خیلی خوب نیست چون اغلب اوقات می توانید در دریا از چیزهایی که روی کنسول چاپ می شود گم شوید.اگر هر بخشی از کد را در try/catch قرار دهید ، به این معنی است که فکر می کنید ممکن است خطایی در آنجا رخ دهد و بنابراین باید برنامه ای داشته باشید ،یا یک مسیر کد ایجاد کنید،برای وقتی اتفاق می افتد.
 
@@ -2724,7 +2724,7 @@ catch (Exception error)
 </details>
 
 <details>
-  <summary><b>استفاده از چند بلوک catch بجای استفاده از شرط ها Use multiple catch block instead of if conditions.</b></summary>
+  <summary align="right"><b>استفاده از چند بلوک catch بجای استفاده از شرط ها Use multiple catch block instead of if conditions.</b></summary>
 
 اگر شما نیاز به انجام کاری نسبت به نوع استثناء دارید ،بهتر است از بلوک چندگانه catch برای مدیریت کردن استثنا استفاده کنید.
 
@@ -2771,7 +2771,7 @@ catch (TaskSchedulerException ex)
 </details>
 
 <details>
-  <summary><b>هنگام رخ دادن استثنا stack trace را حفظ کنید Keep exception stack trace when rethrowing exceptions</b></summary>
+  <summary align="right"><b>هنگام رخ دادن استثنا stack trace را حفظ کنید Keep exception stack trace when rethrowing exceptions</b></summary>
 
 سی شارپ C# اجازه می دهد تا استثناء در یک catch block با استفاده از کلمه کلیدی throw دوباره مورد استفاده قرار گیرد. یک کار بد این است که یک استثناء گرفتار شده را با استفاده از throw e; پرتاپ کنید.این عبارت ردیابی پشته (stack trace) را reset می کند.بجای آن از throw; استفاده کنید.این باعث می شود ردیابی پشته حفظ شود و بینشی عمیق تر درباره این استثنا ارائه دهد.گزینه دیگر استفاده از یک استثناء سفارشی است.به سادگی نمونه سازی یک استثناء جدید و پرتاب new CustomException("some info", e); خاصیت استثنایی درونی خود را به استثناء گرفتار شده تبدیل کنید.اضافه کردن اطلاعات به استثناء یک عمل خوب است زیرا به اشکال زدایی کمک می کند.با این حال،اگر هدف این است که یک استثنا را log کنید ، از throw; استفاده کنید. برای انتقال buck به صدا زننده.
 
@@ -2824,7 +2824,7 @@ catch (Exception error)
 ## قالب-بندی
 
 <details>
-  <summary><b>از فایل .editorconfig استفاده کنید.</b></summary>
+  <summary align="right"><b>از فایل .editorconfig استفاده کنید.</b></summary>
 
  **بد:**
 
@@ -2994,7 +2994,7 @@ indent_size = 2
 ## کامنت ها
 
 <details>
-  <summary><b>خودداری از نشانگرهای موقعیتی Avoid positional markers</b></summary>
+  <summary align="right"><b>خودداری از نشانگرهای موقعیتی Avoid positional markers</b></summary>
 
 آنها معمولاً فقط سر و صدا می کنند.بگذارید توابع و نام های متغیر به همراه تورفتگی و قالب بندی مناسب ، ساختار بصری را به کد شما بدهند.
 
@@ -3061,7 +3061,7 @@ void Actions()
 </details>
 
 <details>
-  <summary><b>کامنت ها را در خارج از کد اصلی قرار ندهید Don't leave commented out code in your codebase</b></summary>
+  <summary align="right"><b>کامنت ها را در خارج از کد اصلی قرار ندهید Don't leave commented out code in your codebase</b></summary>
 
 کنترل نسخهVersion control به یک دلیل وجود دارد.کد قدیمی را در history بگذارید.
 
@@ -3085,7 +3085,7 @@ doStuff();
 </details>
 
 <details>
-  <summary><b>کامنت ژورنالی نداشته باشید Don't have journal comments</b></summary>
+  <summary align="right"><b>کامنت ژورنالی نداشته باشید Don't have journal comments</b></summary>
 
 به یاد داشته باشید ، از کنترل نسخه استفاده کنید! دیگر نیازی به کدهای مرده ، کد comment شده و به خصوص comment های ژورنالی نیست.برای دریافت تاریخچه از log git استفاده کنید! 
 
@@ -3118,7 +3118,7 @@ public int Combine(int a,int b)
 </details>
 
 <details>
-  <summary><b>فقط چیزهایی را کامنت کنید که پیچیدگی منطق تجاری دارند Only comment things that have business logic complexity </b></summary>
+  <summary align="right"><b>فقط چیزهایی را کامنت کنید که پیچیدگی منطق تجاری دارند Only comment things that have business logic complexity </b></summary>
 
 نظرات عذرخواهی است ، نه یک الزام.کد خوب اغلب خود را مستند می کند.
 
