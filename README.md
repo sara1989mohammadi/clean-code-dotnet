@@ -59,6 +59,7 @@
 
 الهام گرفته شده از [clean-code-javascript](https://github.com/ryanmcdermott/clean-code-javascript) و [clean-code-php](https://github.com/jupeter/clean-code-php).
 
+
 # کد تمیز دات نت
 
 ## نام گذاری
@@ -74,6 +75,7 @@ int d;
 ```
 
 **خوب:**
+
 
 ```csharp
 int daySinceModification;
